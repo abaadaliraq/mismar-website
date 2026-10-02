@@ -10,6 +10,11 @@ export default function ProjectsInitiativesSection({ locale = "ar" }: Props) {
   const t = getProjectsContent(locale);
   const isRtl = t.dir === "rtl";
   const ArrowIcon = isRtl ? ArrowLeft : ArrowRight;
+  const buttonClass =
+    "mt-8 inline-flex w-fit items-center gap-3 border border-[#2a1005]/25 px-7 py-3 text-sm font-light transition hover:border-[#2f9c95] hover:bg-[#2f9c95] hover:text-[#f7efe8]";
+
+  const opensInNewTab = (href: string) =>
+    href.startsWith("http") || href.endsWith(".pdf");
 
   return (
     <section
@@ -38,6 +43,7 @@ export default function ProjectsInitiativesSection({ locale = "ar" }: Props) {
         <div className="border-t border-[#2a1005]/15">
           {t.items.map((project, index) => {
             const imageFirst = index % 2 === 0;
+            const action = project.action;
 
             return (
               <article
@@ -76,13 +82,25 @@ export default function ProjectsInitiativesSection({ locale = "ar" }: Props) {
                     {project.description}
                   </p>
 
-                  <Link
-                    href={`/${locale}/projects/${project.slug}`}
-                    className="mt-8 inline-flex w-fit items-center gap-3 border border-[#2a1005]/25 px-7 py-3 text-sm font-light transition hover:border-[#2f9c95] hover:bg-[#2f9c95] hover:text-[#f7efe8]"
-                  >
-                    {t.viewProject}
-                    <ArrowIcon size={16} />
-                  </Link>
+                  {action ? (
+                    <a
+                      href={action.href}
+                      target={opensInNewTab(action.href) ? "_blank" : undefined}
+                      rel={opensInNewTab(action.href) ? "noreferrer" : undefined}
+                      className={buttonClass}
+                    >
+                      {action.label}
+                      <ArrowIcon size={16} />
+                    </a>
+                  ) : (
+                    <Link
+                      href={`/${locale}/projects/${project.slug}`}
+                      className={buttonClass}
+                    >
+                      {t.viewProject}
+                      <ArrowIcon size={16} />
+                    </Link>
+                  )}
                 </div>
               </article>
             );

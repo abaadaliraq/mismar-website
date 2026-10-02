@@ -33,6 +33,8 @@ export default async function ProjectDetailsPage({
 
   const isRtl = t.dir === "rtl";
   const ArrowIcon = isRtl ? ArrowLeft : ArrowRight;
+  const opensInNewTab = (href: string) =>
+    href.startsWith("http") || href.endsWith(".pdf");
 
   return (
     <main dir={t.dir} className="min-h-screen bg-[#f3ede5] text-[#2a1005]">
@@ -75,8 +77,8 @@ export default async function ProjectDetailsPage({
           {project.visit && (
             <a
               href={project.visit.href}
-              target={project.visit.href.startsWith("http") ? "_blank" : undefined}
-              rel={project.visit.href.startsWith("http") ? "noreferrer" : undefined}
+              target={opensInNewTab(project.visit.href) ? "_blank" : undefined}
+              rel={opensInNewTab(project.visit.href) ? "noreferrer" : undefined}
               className="mt-9 inline-flex items-center gap-3 bg-[#2a1005] px-7 py-3 text-sm font-light text-[#f7efe8] transition hover:bg-[#2f9c95]"
             >
               {project.visit.label || t.visitLabel}
@@ -97,6 +99,8 @@ export default async function ProjectDetailsPage({
                   <a
                     key={pdf.label}
                     href={pdf.href}
+                    target={opensInNewTab(pdf.href) ? "_blank" : undefined}
+                    rel={opensInNewTab(pdf.href) ? "noreferrer" : undefined}
                     className="inline-flex items-center gap-2 border border-[#2a1005]/20 px-5 py-3 text-sm font-light transition hover:border-[#2f9c95] hover:text-[#2f9c95]"
                   >
                     {pdf.label}

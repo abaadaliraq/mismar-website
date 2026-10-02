@@ -17,6 +17,7 @@ export type ProjectContentItem = {
   title: string;
   description: string;
   details: string;
+  action?: ProjectExternalLink;
   pdfs?: ProjectPdfLink[];
   visit?: ProjectExternalLink;
   externalLinks?: ProjectExternalLink[];
@@ -29,12 +30,12 @@ export const projectSlugs = [
   "digital-support-artists",
 ] as const;
 
-const placeholderLinks = {
-  baytPdfAr: "#bayt-al-tuhafiyat-pdf-ar",
-  baytPdfEn: "#bayt-al-tuhafiyat-pdf-en",
-  kishibApp: "#kishib-app",
-  kishibPdfAr: "#kishib-pdf-ar",
-  kishibPdfEn: "#kishib-pdf-en",
+const projectLinks = {
+  baytProject: "https://abaadaliraq.github.io/mismar-hoa/",
+  kishibInitiative: "https://www.kishibapp.com/",
+  naimaFile: "/pdfs/projects/naima-zakirat-baghdad-ar.pdf",
+  wissamRadhi: "https://www.wissamradhi.art/",
+  ghadeerAlTaee: "https://www.ghadeeraltaee.art/ar",
 };
 
 export const projectsSectionContent: Record<
@@ -73,10 +74,14 @@ export const projectsSectionContent: Record<
           "بيت تراثي في بغداد يتحول إلى مساحة للفن والذاكرة واللقاءات الثقافية.",
         details:
           "بيت التحفيات هو أحد مسارات مسمار في إحياء البيوت التراثية وتحويلها إلى مكان يستقبل المعارض والورش والفعاليات الثقافية، مع الحفاظ على روح المكان وتفاصيله المعمارية.",
-        pdfs: [
-          { label: "PDF عربي", href: placeholderLinks.baytPdfAr },
-          { label: "English PDF", href: placeholderLinks.baytPdfEn },
-        ],
+        action: {
+          label: "عرض المشروع",
+          href: projectLinks.baytProject,
+        },
+        visit: {
+          label: "عرض المشروع",
+          href: projectLinks.baytProject,
+        },
       },
       {
         slug: "kishib",
@@ -86,13 +91,13 @@ export const projectsSectionContent: Record<
         description: "KISHIB — A MISMAR Initiative",
         details:
           "KISHIB مبادرة رقمية من مسمار تهدف إلى بناء تجربة معاصرة تخدم الذاكرة والفن والمحتوى الثقافي بطريقة قابلة للوصول والاستخدام.",
-        pdfs: [
-          { label: "PDF عربي", href: placeholderLinks.kishibPdfAr },
-          { label: "English PDF", href: placeholderLinks.kishibPdfEn },
-        ],
+        action: {
+          label: "زيارة المبادرة",
+          href: projectLinks.kishibInitiative,
+        },
         visit: {
-          label: "زيارة التطبيق",
-          href: placeholderLinks.kishibApp,
+          label: "زيارة المبادرة",
+          href: projectLinks.kishibInitiative,
         },
       },
       {
@@ -104,6 +109,14 @@ export const projectsSectionContent: Record<
           "معرض في بيت التحفيات يستعيد ملامح بغداد عبر الفن والسرد الثقافي.",
         details:
           "يقام معرض نعيمة وذاكرة بغداد في بيت التحفيات بوصفه تجربة فنية وثقافية تستحضر ذاكرة المدينة وتمنحها قراءة بصرية معاصرة داخل فضاء تراثي حي.",
+        action: {
+          label: "عرض ملف المعرض",
+          href: projectLinks.naimaFile,
+        },
+        visit: {
+          label: "عرض ملف المعرض",
+          href: projectLinks.naimaFile,
+        },
       },
       {
         slug: "digital-support-artists",
@@ -117,11 +130,11 @@ export const projectsSectionContent: Record<
         externalLinks: [
           {
             label: "wissamradhi.art",
-            href: "https://www.wissamradhi.art/",
+            href: projectLinks.wissamRadhi,
           },
           {
             label: "ghadeeraltaee.art/ar",
-            href: "https://www.ghadeeraltaee.art/ar",
+            href: projectLinks.ghadeerAlTaee,
           },
         ],
       },
@@ -148,10 +161,14 @@ export const projectsSectionContent: Record<
           "A Baghdad heritage house becoming a space for art, memory, and cultural gatherings.",
         details:
           "Bayt Al-Tuhafiyat is one of MISMAR Foundation's heritage revival paths, transforming a heritage house into a living venue for exhibitions, workshops, and cultural events while preserving its architectural spirit.",
-        pdfs: [
-          { label: "Arabic PDF", href: placeholderLinks.baytPdfAr },
-          { label: "English PDF", href: placeholderLinks.baytPdfEn },
-        ],
+        action: {
+          label: "View Project",
+          href: projectLinks.baytProject,
+        },
+        visit: {
+          label: "View Project",
+          href: projectLinks.baytProject,
+        },
       },
       {
         slug: "kishib",
@@ -161,13 +178,13 @@ export const projectsSectionContent: Record<
         description: "KISHIB — A MISMAR Initiative",
         details:
           "KISHIB is a MISMAR Foundation digital initiative designed to create a contemporary experience for memory, art, and cultural content in an accessible format.",
-        pdfs: [
-          { label: "Arabic PDF", href: placeholderLinks.kishibPdfAr },
-          { label: "English PDF", href: placeholderLinks.kishibPdfEn },
-        ],
+        action: {
+          label: "Visit Initiative",
+          href: projectLinks.kishibInitiative,
+        },
         visit: {
-          label: "Visit App",
-          href: placeholderLinks.kishibApp,
+          label: "Visit Initiative",
+          href: projectLinks.kishibInitiative,
         },
       },
       {
@@ -179,6 +196,14 @@ export const projectsSectionContent: Record<
           "An exhibition at Bayt Al-Tuhafiyat tracing Baghdad through art and cultural storytelling.",
         details:
           "Naima and Baghdad Memory is hosted at Bayt Al-Tuhafiyat as an art and cultural exhibition that revisits the city through visual work and contemporary storytelling.",
+        action: {
+          label: "View Exhibition File",
+          href: projectLinks.naimaFile,
+        },
+        visit: {
+          label: "View Exhibition File",
+          href: projectLinks.naimaFile,
+        },
       },
       {
         slug: "digital-support-artists",
@@ -192,11 +217,11 @@ export const projectsSectionContent: Record<
         externalLinks: [
           {
             label: "wissamradhi.art",
-            href: "https://www.wissamradhi.art/",
+            href: projectLinks.wissamRadhi,
           },
           {
             label: "ghadeeraltaee.art/ar",
-            href: "https://www.ghadeeraltaee.art/ar",
+            href: projectLinks.ghadeerAlTaee,
           },
         ],
       },
@@ -223,10 +248,14 @@ export const projectsSectionContent: Record<
           "ماڵێکی کەلەپووری لە بەغدا کە دەبێتە شوێنی هونەر، یادەوەری و دیداری کولتووری.",
         details:
           "ماڵی التحفیات یەکێکە لە ڕێڕەوەکانی مسمار بۆ زیندووکردنەوەی ماڵە کەلەپوورییەکان و گۆڕینیان بۆ شوێنی پێشانگا، وۆرکشۆپ و چالاکیی کولتووری.",
-        pdfs: [
-          { label: "PDF عەرەبی", href: placeholderLinks.baytPdfAr },
-          { label: "English PDF", href: placeholderLinks.baytPdfEn },
-        ],
+        action: {
+          label: "بینینی پڕۆژە",
+          href: projectLinks.baytProject,
+        },
+        visit: {
+          label: "بینینی پڕۆژە",
+          href: projectLinks.baytProject,
+        },
       },
       {
         slug: "kishib",
@@ -236,13 +265,13 @@ export const projectsSectionContent: Record<
         description: "KISHIB — A MISMAR Initiative",
         details:
           "KISHIB دەستپێشخەرییەکی دیجیتاڵیی مسمارە بۆ دروستکردنی ئەزموونێکی نوێ بۆ یادەوەری، هونەر و ناوەڕۆکی کولتووری.",
-        pdfs: [
-          { label: "PDF عەرەبی", href: placeholderLinks.kishibPdfAr },
-          { label: "English PDF", href: placeholderLinks.kishibPdfEn },
-        ],
+        action: {
+          label: "سەردانی دەستپێشخەری",
+          href: projectLinks.kishibInitiative,
+        },
         visit: {
-          label: "سەردانی ئەپ",
-          href: placeholderLinks.kishibApp,
+          label: "سەردانی دەستپێشخەری",
+          href: projectLinks.kishibInitiative,
         },
       },
       {
@@ -254,6 +283,14 @@ export const projectsSectionContent: Record<
           "پێشانگایەک لە ماڵی التحفیات کە بەغدا لە ڕێگەی هونەر و گێڕانەوەی کولتووری دەگەڕێنێتەوە.",
         details:
           "نەعیمە و یادەوەری بەغدا پێشانگایەکی هونەری و کولتوورییە لە ماڵی التحفیات کە یادەوەری شار لە ڕێگەی کاری بینراو و گێڕانەوەی نوێ دەخوێنێتەوە.",
+        action: {
+          label: "بینینی فایلی پێشانگا",
+          href: projectLinks.naimaFile,
+        },
+        visit: {
+          label: "بینینی فایلی پێشانگا",
+          href: projectLinks.naimaFile,
+        },
       },
       {
         slug: "digital-support-artists",
@@ -267,11 +304,11 @@ export const projectsSectionContent: Record<
         externalLinks: [
           {
             label: "wissamradhi.art",
-            href: "https://www.wissamradhi.art/",
+            href: projectLinks.wissamRadhi,
           },
           {
             label: "ghadeeraltaee.art/ar",
-            href: "https://www.ghadeeraltaee.art/ar",
+            href: projectLinks.ghadeerAlTaee,
           },
         ],
       },
