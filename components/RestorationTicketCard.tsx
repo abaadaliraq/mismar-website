@@ -22,6 +22,7 @@ const content = {
     date: "ترميم",
     location: "بغداد / بيوت التراث",
     cta: "اكتشف مشاريع الترميم",
+    imageAlt: "ترميم وإحياء بيت تراثي في بغداد",
   },
   en: {
     dir: "ltr",
@@ -32,6 +33,7 @@ const content = {
     date: "REST",
     location: "Baghdad / Heritage Houses",
     cta: "Explore Restoration Projects",
+    imageAlt: "Restoration and revival of a heritage house in Baghdad",
   },
   ku: {
     dir: "rtl",
@@ -42,6 +44,7 @@ const content = {
     date: "REST",
     location: "بەغدا / ماڵە کەلەپوورییەکان",
     cta: "بینینی پڕۆژەکانی نۆژەنکردنەوە",
+    imageAlt: "نۆژەنکردنەوە و زیندووکردنەوەی ماڵێکی کەلەپووری لە بەغدا",
   },
 };
 
@@ -66,7 +69,7 @@ export default function RestorationTicketCard({ locale = "ar" }: Props) {
           <div className="relative h-[260px] overflow-hidden md:h-[340px]">
             <motion.img
               src={ticketImage}
-              alt="Heritage restoration"
+              alt={t.imageAlt}
               className="h-full w-full object-cover transition duration-700 group-hover:scale-105"
               whileHover={{ scale: 1.04 }}
               transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}

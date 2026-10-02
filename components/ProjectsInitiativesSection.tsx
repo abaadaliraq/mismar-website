@@ -31,9 +31,9 @@ export default function ProjectsInitiativesSection({ locale = "ar" }: Props) {
             <div className="h-px w-14 bg-[#2f9c95]" />
           </div>
 
-          <h2 className="text-[38px] font-light leading-[1.18] md:text-[68px]">
+          <h1 className="text-[38px] font-light leading-[1.18] md:text-[68px]">
             {t.title}
-          </h2>
+          </h1>
 
           <p className="mt-6 max-w-[720px] text-sm font-light leading-8 text-[#2a1005]/65 md:text-base">
             {t.intro}

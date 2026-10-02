@@ -1,7 +1,9 @@
+import type { Metadata } from "next";
 import Navbar from "@/components/Navbar";
 import Link from "next/link";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 import BeforeAfterSlider from "@/components/BeforeAfterSlider";
+import { buildMetadata } from "@/lib/seo";
 
 type Locale = "ar" | "en" | "ku";
 
@@ -10,6 +12,7 @@ const content = {
     dir: "rtl",
     back: "العودة للرئيسية",
     title: "ترميم بيوت التراث",
+    heroImageAlt: "ترميم بيت تراثي في بغداد ضمن مشاريع مؤسسة مسمار",
     intro:
       "تعمل مؤسسة مسمار للفنون والتنمية المستدامة على إعادة إحياء البيوت والوجهات التراثية المهملة، من خلال ترميمها والحفاظ على أسلوبها المعماري القديم وتحويلها إلى مساحات ثقافية وسياحية وفنية قابلة للحياة من جديد.",
     s1Title: "الترميم ليس طلاءً جديداً",
@@ -29,6 +32,7 @@ const content = {
     dir: "ltr",
     back: "Back Home",
     title: "Heritage House Restoration",
+    heroImageAlt: "Heritage house restoration in Baghdad by MISMAR Foundation",
     intro:
       "MISMAR Foundation works to revive neglected heritage houses and destinations by restoring their architectural identity and transforming them into living cultural, artistic, and touristic spaces.",
     s1Title: "Restoration is not repainting",
@@ -48,6 +52,7 @@ const content = {
     dir: "rtl",
     back: "گەڕانەوە بۆ سەرەکی",
     title: "نۆژەنکردنەوەی ماڵە کەلەپوورییەکان",
+    heroImageAlt: "نۆژەنکردنەوەی ماڵێکی کەلەپووری لە بەغدا لەلایەن دامەزراوەی مسمار",
     intro:
       "مسمار کار دەکات بۆ نۆژەنکردنەوەی ماڵ و شوێنە کەلەپوورییە پشتگوێخراوەکان و گۆڕینیان بۆ شوێنی کولتووری و هونەری.",
     s1Title: "نۆژەنکردنەوە تەنها ڕەنگکردن نییە",
@@ -64,6 +69,15 @@ const content = {
       "ئەم نموونەیە ماڵێکی کەلەپوورییە کە بە پاراستنی شێوازی تەلارسازی کۆن نۆژەن کراوەتەوە.",
   },
 };
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: Locale }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  return buildMetadata(locale, "restoration", "restoration");
+}
 
 export default async function RestorationPage({
   params,
@@ -99,7 +113,7 @@ export default async function RestorationPage({
 
         <img
           src="/images/restoration-hero.jpg"
-          alt="Heritage restoration"
+          alt={t.heroImageAlt}
           className="h-[300px] w-full object-cover md:h-[440px]"
         />
       </section>

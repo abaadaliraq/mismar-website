@@ -22,6 +22,7 @@ const content = {
     date: "ورش",
     location: "بغداد / بيت التحفيات",
     cta: "استكشف الأنشطة",
+    imageAlt: "ورش ومعارض فنية داخل بيت التحفيات في بغداد",
   },
 
   en: {
@@ -33,6 +34,7 @@ const content = {
     date: "ART",
     location: "Baghdad / Bayt Al-Tuhafiyat",
     cta: "Explore Activities",
+    imageAlt: "Art workshops and exhibitions inside Bayt Al-Tuhafiyat in Baghdad",
   },
 
   ku: {
@@ -44,6 +46,7 @@ const content = {
     date: "ART",
     location: "بەغدا / ماڵی التحفیات",
     cta: "بینینی چالاکییەکان",
+    imageAlt: "وۆرکشۆپ و پێشانگای هونەری لە ناو ماڵی التحفیات لە بەغدا",
   },
 };
 
@@ -110,7 +113,7 @@ export default function WorkshopsTicketCard({ locale = "ar" }: Props) {
           <div className="order-1 relative h-[260px] overflow-hidden md:order-2 md:h-[340px]">
             <motion.img
               src={ticketImage}
-              alt="Mismar workshops and exhibitions"
+              alt={t.imageAlt}
               className="h-full w-full object-cover transition duration-700 group-hover:scale-105"
               whileHover={{ scale: 1.04 }}
               transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}

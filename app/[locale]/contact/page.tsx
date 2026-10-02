@@ -1,6 +1,8 @@
+import type { Metadata } from "next";
 import Navbar from "@/components/Navbar";
 import Link from "next/link";
 import { ArrowLeft, ArrowRight } from "lucide-react";
+import { buildMetadata } from "@/lib/seo";
 
 type Locale = "ar" | "en" | "ku";
 
@@ -9,6 +11,7 @@ const content = {
     dir: "rtl",
     back: "العودة للرئيسية",
     title: "تواصل وانضم إلى مسمار",
+    contactImageAlt: "التواصل مع مؤسسة مسمار للفنون والتنمية المستدامة في بغداد",
     subtitle:
       "إذا كنت ترغب بالتعاون، المشاركة، دعم مشاريع الترميم، إقامة ورش أو فعاليات فنية، أو لديك بيت تراثي يحتاج إلى إحياء، يمكنك التواصل معنا عبر النموذج التالي.",
     formTitle: "أرسل طلبك إلى مسمار",
@@ -25,6 +28,7 @@ const content = {
     dir: "ltr",
     back: "Back Home",
     title: "Contact & Join Mismar",
+    contactImageAlt: "Contact MISMAR Foundation for Arts and Sustainable Development in Baghdad",
     subtitle:
       "If you would like to collaborate, support restoration projects, organize workshops or exhibitions, or restore a heritage house, contact us through the form below.",
     formTitle: "Send Your Request",
@@ -41,6 +45,7 @@ const content = {
     dir: "rtl",
     back: "گەڕانەوە بۆ سەرەکی",
     title: "پەیوەندی و بەشداری لە مسمار",
+    contactImageAlt: "پەیوەندی بە دامەزراوەی مسمار بۆ هونەر و گەشەپێدانی بەردەوام لە بەغدا",
     subtitle:
       "ئەگەر دەتەوێت هاوکاری، پشتگیری، بەشداری، یان چالاکییەکی کولتووری پێشنیار بکەیت، لە ڕێگەی ئەم فۆرمەوە پەیوەندیمان پێوە بکە.",
     formTitle: "داواکارییەکەت بنێرە",
@@ -53,6 +58,15 @@ const content = {
       "مسمار کار دەکات بۆ نۆژەنکردنەوەی شوێنە کەلەپوورییەکان و گۆڕینیان بۆ شوێنی کولتووری و هونەری.",
   },
 };
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: Locale }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  return buildMetadata(locale, "contact", "contact");
+}
 
 export default async function ContactPage({
   params,
@@ -100,7 +114,7 @@ export default async function ContactPage({
           <div className="overflow-hidden">
             <img
               src="/images/contact-side.jpg"
-              alt="Mismar contact"
+              alt={t.contactImageAlt}
               className="h-[300px] w-full object-cover md:h-[520px]"
             />
           </div>

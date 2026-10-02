@@ -1,7 +1,6 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ArrowLeft } from "lucide-react";
 
 type Locale = "ar" | "en" | "ku";
 
@@ -12,7 +11,7 @@ type Props = {
 const content = {
   ar: {
     dir: "rtl",
-    eyebrow: "عن مسمار",
+    eyebrow: "ذاكرة حيّة",
     established: "تأسست",
     year: "2026",
     title: (
@@ -23,15 +22,17 @@ const content = {
       </>
     ),
     lead:
-      "مؤسسة مسمار للفنون مساحة ثقافية تحتضن البيوت التراثية، وتعيد تحويلها إلى منصات للفن والمعارض والورش.",
+      "تعمل مسمار على إعادة حضور التراث في الحياة المعاصرة، من خلال الفن، إحياء الأماكن، توثيق المقتنيات، وصناعة تجارب ثقافية تربط الماضي بالحاضر.",
     body:
-      "من مقرها في بيت التحفيات، تعمل مسمار على دعم الفنانين والشباب، وتنظيم ورش فنية وتراثية وتاريخية تثقيفية، وربط الذاكرة العراقية بالحاضر بلغة معاصرة.",
-    button: "المزيد عن مسمار",
+      "من البيت التراثي إلى العمل الفني والمبادرة الرقمية، تتعامل المؤسسة مع الذاكرة كمساحة قابلة للحفظ والتطوير والمشاركة.",
+    imageAltMain: "تفاصيل من تجربة مؤسسة مسمار داخل بيت تراثي في بغداد",
+    imageAltDetail01: "مساحة فنية وتراثية ضمن مبادرات مؤسسة مسمار",
+    imageAltDetail02: "مقتنيات وتراث بغدادي ضمن ذاكرة مؤسسة مسمار",
   },
 
   en: {
     dir: "ltr",
-    eyebrow: "About Mismar",
+    eyebrow: "Living Memory",
     established: "Established",
     year: "2026",
     title: (
@@ -42,15 +43,17 @@ const content = {
       </>
     ),
     lead:
-      "MISMAR Foundation for Arts is a cultural space that embraces heritage houses and transforms them into platforms for art, exhibitions, and workshops.",
+      "Mismar restores the presence of heritage in contemporary life through art, place revival, collection documentation, and cultural experiences that connect the past with the present.",
     body:
-      "Based at Bayt Al-Tuhafiyat, MISMAR Foundation supports artists and youth through artistic, heritage, and historical workshops that reconnect Iraqi memory with the present.",
-    button: "More about Mismar",
+      "From the heritage house to the artwork and the digital initiative, the foundation treats memory as a space that can be preserved, developed, and shared.",
+    imageAltMain: "MISMAR Foundation heritage and art experience in Baghdad",
+    imageAltDetail01: "Art and heritage space within a MISMAR Foundation initiative",
+    imageAltDetail02: "Baghdad heritage objects connected to MISMAR Foundation memory work",
   },
 
   ku: {
     dir: "rtl",
-    eyebrow: "دەربارەی مسمار",
+    eyebrow: "یادەوەریی زیندوو",
     established: "دامەزراوە",
     year: "2026",
     title: (
@@ -61,10 +64,12 @@ const content = {
       </>
     ),
     lead:
-      "دامەزراوەی مسمار بۆ هونەر شوێنێکی کولتوورییە کە ماڵە کەلەپوورییەکان دەگرێتەوە و دەیانکاتە سەکۆی هونەر و پێشانگا و وۆرکشۆپ.",
+      "مسمار کار دەکات بۆ گەڕاندنەوەی ئامادەبوونی کەلەپوور لە ژیانی هاوچەرخدا، لە ڕێگەی هونەر، زیندووکردنەوەی شوێنەکان، بەدۆکیۆمێنتکردنی کۆکراوەکان و دروستکردنی ئەزموونی کولتووری.",
     body:
-      "لە بنکەکەی لە ماڵی التحفیات، مسمار کار دەکات بۆ پشتگیری هونەرمەندان و گەنجان و گرێدانی یادەوەری عێراقی بە ئێستاوە.",
-    button: "زیاتر دەربارەی مسمار",
+      "لە ماڵی کەلەپوورییەوە بۆ کاری هونەری و دەستپێشخەریی دیجیتاڵی، دامەزراوەکە مامەڵە لەگەڵ یادەوەری دەکات وەک شوێنێک بۆ پاراستن، گەشەپێدان و هاوبەشکردن.",
+    imageAltMain: "ئەزموونی کەلەپوور و هونەری دامەزراوەی مسمار لە بەغدا",
+    imageAltDetail01: "شوێنی هونەری و کەلەپووری لە دەستپێشخەرییەکانی مسمار",
+    imageAltDetail02: "کۆکراوەی کەلەپووری بەغدا لە کاری یادەوەری مسمار",
   },
 };
 
@@ -109,14 +114,6 @@ export default function AboutIntro({ locale = "ar" }: Props) {
           <p className="mt-5 max-w-[580px] text-sm font-light leading-7 text-[#2a1005]/58">
             {t.body}
           </p>
-
-          <a
-            href="#programs"
-            className="mt-8 inline-flex items-center gap-3 bg-[#2a1005] px-7 py-3 text-sm font-light text-[#f7efe8] transition hover:bg-[#2f9c95]"
-          >
-            {t.button}
-            <ArrowLeft size={16} />
-          </a>
         </motion.div>
 
         {/* IMAGE COMPOSITION */}
@@ -131,24 +128,24 @@ export default function AboutIntro({ locale = "ar" }: Props) {
 
           <div className="absolute right-[19%] top-[13%] z-10 h-44 w-36 overflow-hidden">
             <img
-              src="https://images.unsplash.com/photo-1547891654-e66ed7ebb968?q=80&w=900&auto=format&fit=crop"
-              alt="Mismar exhibition"
+              src="/images/about/about-main.jpg"
+              alt={t.imageAltMain}
               className="h-full w-full object-cover"
             />
           </div>
 
           <div className="absolute right-[44%] top-[25%] z-20 h-36 w-32 overflow-hidden">
             <img
-              src="https://images.unsplash.com/photo-1577083552431-6e5fd01aa342?q=80&w=900&auto=format&fit=crop"
-              alt="Mismar gallery"
+              src="/images/about/about-detail-01.jpg"
+              alt={t.imageAltDetail01}
               className="h-full w-full object-cover"
             />
           </div>
 
           <div className="absolute left-[5%] top-[37%] z-30 h-56 w-[285px] overflow-hidden md:w-[350px]">
             <img
-              src="https://images.unsplash.com/photo-1564399579883-451a5d44ec08?q=80&w=1200&auto=format&fit=crop"
-              alt="Heritage museum interior"
+              src="/images/about/about-detail-02.jpg"
+              alt={t.imageAltDetail02}
               className="h-full w-full object-cover"
             />
           </div>

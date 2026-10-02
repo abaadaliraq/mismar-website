@@ -18,6 +18,7 @@ const content = {
     date: "2026",
     location: "بغداد / بيت التحفيات",
     cta: "ادخل للصفحة",
+    imageAlt: "بيت تراثي في بغداد يمثل عمل مؤسسة مسمار",
   },
   en: {
     dir: "ltr",
@@ -27,6 +28,7 @@ const content = {
     date: "2026",
     location: "Baghdad / Bayt Al-Tuhafiyat",
     cta: "Open page",
+    imageAlt: "A Baghdad heritage house representing MISMAR Foundation work",
   },
   ku: {
     dir: "rtl",
@@ -36,6 +38,7 @@ const content = {
     date: "2026",
     location: "بەغدا / ماڵی التحفیات",
     cta: "کردنەوەی پەڕە",
+    imageAlt: "ماڵێکی کەلەپووری لە بەغدا کە کاری دامەزراوەی مسمار دەنوێنێت",
   },
 };
 
@@ -53,7 +56,7 @@ export default function AboutTicketCard({ locale = "ar" }: Props) {
         <div className="relative h-[260px] overflow-hidden md:h-[340px]">
           <img
             src={ticketImage}
-            alt="MISMAR Foundation"
+            alt={t.imageAlt}
             className="h-full w-full object-cover transition duration-700 group-hover:scale-105"
           />
           <div className="absolute inset-0 bg-black/10" />

@@ -67,7 +67,7 @@ export const projectsSectionContent: Record<
     items: [
       {
         slug: "bayt-al-tuhafiyat",
-        image: "/images/about-ticket.jpg",
+        image: "/images/projects/house.jpg",
         category: "مشروع إحياء تراثي",
         title: "بيت التحفيات",
         description:
@@ -85,7 +85,7 @@ export const projectsSectionContent: Record<
       },
       {
         slug: "kishib",
-        image: "/images/workshop-cover.jpg",
+        image: "/images/projects/kishib.jpg",
         category: "مبادرة رقمية",
         title: "KISHIB",
         description: "KISHIB — A MISMAR Initiative",
@@ -102,7 +102,7 @@ export const projectsSectionContent: Record<
       },
       {
         slug: "naima-baghdad-memory",
-        image: "/images/1 (7).jpg",
+        image: "/images/projects/gallery.jpg",
         category: "معرض فني وثقافي",
         title: "نعيمة وذاكرة بغداد",
         description:
@@ -120,7 +120,7 @@ export const projectsSectionContent: Record<
       },
       {
         slug: "digital-support-artists",
-        image: "/images/contact-side.JPG",
+        image: "/images/projects/artist.jpg",
         category: "مبادرة رقمية",
         title: "دعم الفنانين رقمياً",
         description:
@@ -154,7 +154,7 @@ export const projectsSectionContent: Record<
     items: [
       {
         slug: "bayt-al-tuhafiyat",
-        image: "/images/about-ticket.jpg",
+        image: "/images/projects/house.jpg",
         category: "Heritage Revival Project",
         title: "Bayt Al-Tuhafiyat",
         description:
@@ -172,7 +172,7 @@ export const projectsSectionContent: Record<
       },
       {
         slug: "kishib",
-        image: "/images/workshop-cover.jpg",
+        image: "/images/projects/kishib.jpg",
         category: "Digital Initiative",
         title: "KISHIB",
         description: "KISHIB — A MISMAR Initiative",
@@ -189,7 +189,7 @@ export const projectsSectionContent: Record<
       },
       {
         slug: "naima-baghdad-memory",
-        image: "/images/1 (7).jpg",
+        image: "/images/projects/gallery.jpg",
         category: "Art & Cultural Exhibition",
         title: "Naima and Baghdad Memory",
         description:
@@ -207,7 +207,7 @@ export const projectsSectionContent: Record<
       },
       {
         slug: "digital-support-artists",
-        image: "/images/contact-side.JPG",
+        image: "/images/projects/artist.jpg",
         category: "Digital Initiative",
         title: "Digital Support for Artists",
         description:
@@ -241,7 +241,7 @@ export const projectsSectionContent: Record<
     items: [
       {
         slug: "bayt-al-tuhafiyat",
-        image: "/images/about-ticket.jpg",
+        image: "/images/projects/house.jpg",
         category: "پڕۆژەی زیندووکردنەوەی کەلەپوور",
         title: "ماڵی التحفیات",
         description:
@@ -259,7 +259,7 @@ export const projectsSectionContent: Record<
       },
       {
         slug: "kishib",
-        image: "/images/workshop-cover.jpg",
+        image: "/images/projects/kishib.jpg",
         category: "دەستپێشخەریی دیجیتاڵی",
         title: "KISHIB",
         description: "KISHIB — A MISMAR Initiative",
@@ -276,7 +276,7 @@ export const projectsSectionContent: Record<
       },
       {
         slug: "naima-baghdad-memory",
-        image: "/images/1 (7).jpg",
+        image: "/images/projects/gallery.jpg",
         category: "پێشانگای هونەری و کولتووری",
         title: "نەعیمە و یادەوەری بەغدا",
         description:
@@ -294,7 +294,7 @@ export const projectsSectionContent: Record<
       },
       {
         slug: "digital-support-artists",
-        image: "/images/contact-side.JPG",
+        image: "/images/projects/artist.jpg",
         category: "دەستپێشخەریی دیجیتاڵی",
         title: "پشتگیری دیجیتاڵی بۆ هونەرمەندان",
         description:

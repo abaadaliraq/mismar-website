@@ -1,6 +1,8 @@
+import type { Metadata } from "next";
 import Navbar from "@/components/Navbar";
 import Link from "next/link";
 import { ArrowLeft, ArrowRight } from "lucide-react";
+import { buildMetadata } from "@/lib/seo";
 
 type Locale = "ar" | "en" | "ku";
 
@@ -10,6 +12,8 @@ const content = {
     back: "العودة للرئيسية",
 
     title: "عن مؤسسة مسمار للفنون والتنمية المستدامة",
+    heroImageAlt: "بيت تراثي في بغداد ضمن عمل مؤسسة مسمار",
+    stripImageAlt: "تفاصيل تراثية من بيت بغدادي ضمن مشاريع مؤسسة مسمار",
 
     intro:
       "مؤسسة مسمار للفنون والتنمية المستدامة هي مساحة ثقافية تعمل على إعادة إحياء العلاقة بين الفن والتراث والمجتمع. جاءت تسمية «مسمار» من أول مسمار استُخدم في ترميم بيت تراثي، ليصبح الاسم رمزاً لفكرة صغيرة تبدأ من تفصيل بسيط، لكنها قادرة على إعادة الحياة إلى مكان كامل. تؤمن المؤسسة أن بيوت التراث ليست جدراناً قديمة أو مباني مهملة، بل ذاكرة مدينة، وحكايات عائلات، وهوية بصرية وثقافية يمكن أن تتحول إلى وجهات فنية وسياحية وتعليمية إذا أُعيد الاهتمام بها بالشكل الصحيح.",
@@ -43,6 +47,8 @@ const content = {
     back: "Back Home",
 
     title: "About MISMAR Foundation for Arts and Sustainable Development",
+    heroImageAlt: "Baghdad heritage house connected to MISMAR Foundation work",
+    stripImageAlt: "Heritage details from a Baghdad house in MISMAR Foundation projects",
 
     intro:
       "MISMAR Foundation for Arts and Sustainable Development is a cultural space that reconnects art, heritage, and society. The name “Mismar” comes from the first nail used in restoring a heritage house — a small detail that became a symbol of how one precise act can bring an entire place back to life. MISMAR Foundation believes heritage houses are not simply old walls or abandoned buildings; they are urban memory, family stories, visual identity, and cultural value that can become artistic, touristic, and educational destinations when properly revived.",
@@ -76,6 +82,8 @@ const content = {
     back: "گەڕانەوە بۆ سەرەکی",
 
     title: "دەربارەی دامەزراوەی مسمار بۆ هونەر و گەشەپێدانی بەردەوام",
+    heroImageAlt: "ماڵێکی کەلەپووری لە بەغدا لە کاری دامەزراوەی مسمار",
+    stripImageAlt: "وردەکاری کەلەپووری لە ماڵێکی بەغدادی لە پڕۆژەکانی مسمار",
 
     intro:
       "دامەزراوەی مسمار بۆ هونەر و گەشەپێدانی بەردەوام شوێنێکی کولتوورییە بۆ گرێدانی هونەر، کەلەپوور و کۆمەڵگا. ناوی «مسمار» لە یەکەم مسمارەوە هاتووە کە لە نۆژەنکردنەوەی ماڵێکی کەلەپووری بەکارهات؛ وردەکارییەکی بچووک کە بووە هێمای دەستپێکردنی ژیانەوەی شوێنێکی تەواو. مسمار باوەڕی وایە ماڵە کەلەپوورییەکان تەنها دیوار و بینای کۆن نین، بەڵکو یادەوەری شار، چیرۆکی خێزانەکان و ناسنامەی بینراو و کولتوورین.",
@@ -104,6 +112,15 @@ const content = {
     ],
   },
 };
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: Locale }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  return buildMetadata(locale, "about", "about");
+}
 
 export default async function AboutPage({
   params,
@@ -138,9 +155,9 @@ export default async function AboutPage({
           </div>
 
           <img
-            src="https://images.unsplash.com/photo-1577083552431-6e5fd01aa342?q=80&w=1400&auto=format&fit=crop"
-            alt=""
-            className="h-[280px] w-full object-cover md:h-[430px]"
+            src="/images/about-hero.jpg"
+            alt={t.heroImageAlt}
+            className="h-[280px] w-full object-cover object-center md:h-[430px]"
           />
         </div>
       </section>
@@ -165,21 +182,29 @@ export default async function AboutPage({
         </div>
       </section>
 
-      <section className="px-6 pb-24 pt-8 md:px-16">
-        <h2 className="text-[30px] font-light md:text-[46px]">
+      <section className="h-[220px] overflow-hidden md:h-[320px]">
+        <img
+          src="/images/about-01.jpg"
+          alt={t.stripImageAlt}
+          className="h-full w-full object-cover object-[center_58%]"
+        />
+      </section>
+
+      <section className="px-6 pb-16 pt-4 md:px-16 md:pb-20">
+        <h2 className="border-t border-[#2a1005]/15 pt-6 text-[30px] font-light md:text-[46px]">
           {t.goalsTitle}
         </h2>
 
-        <div className="mt-8 grid gap-4 md:grid-cols-3">
+        <div className="mt-6 grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3">
           {t.goals.map((goal, index) => (
             <div
               key={goal}
-              className="border border-[#2a1005]/15 bg-[#fbf8f3] p-6"
+              className="flex min-h-[150px] flex-col border border-[#2a1005]/15 bg-[#fbf8f3] px-5 py-5 md:min-h-[165px]"
             >
-              <span className="text-sm text-[#2f9c95]">
+              <span className="text-[34px] font-light leading-none text-[#2f9c95] md:text-[42px]">
                 {String(index + 1).padStart(2, "0")}
               </span>
-              <p className="mt-5 text-sm font-light leading-7 text-[#2a1005]/75">
+              <p className="mt-4 text-sm font-light leading-7 text-[#2a1005]/72">
                 {goal}
               </p>
             </div>

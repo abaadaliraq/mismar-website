@@ -7,7 +7,7 @@ type Props = {
   locale?: Locale;
 };
 
-const ticketImage = "/images/about-ticket.jpg";
+const ticketImage = "/images/projects/projects-cover.jpg";
 
 const content = {
   ar: {

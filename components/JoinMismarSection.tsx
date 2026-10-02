@@ -10,23 +10,20 @@ type Props = {
 const content = {
   ar: {
     dir: "rtl",
-    eyebrow: "شارك معنا",
     title: "لنحوّل بيتاً تراثياً إلى مساحة حيّة.",
-    text: "إذا كنت صاحب بيت تراثي، فناناً، مؤسسة تعليمية، جهة داعمة، أو ترغب بالمشاركة في إحياء التراث، تواصل مع مؤسسة مسمار لنصنع معاً أثراً ثقافياً حقيقياً.",
+    text: "تعاون ثقافي وفني لإحياء الذاكرة وصناعة أثر حقيقي.",
     cta: "تواصل مع مسمار",
   },
   en: {
     dir: "ltr",
-    eyebrow: "Join Us",
-    title: "Let’s turn heritage houses into living cultural spaces.",
-    text: "Whether you are a heritage house owner, artist, educational institution, supporter, or volunteer, MISMAR Foundation welcomes collaboration to create real cultural impact.",
+    title: "Let’s turn heritage houses into living spaces.",
+    text: "A quiet invitation to collaborate on art, memory, and cultural revival.",
     cta: "Contact Mismar",
   },
   ku: {
     dir: "rtl",
-    eyebrow: "بەشداری بکە",
-    title: "با ماڵێکی کەلەپووری بکەینە شوێنێکی کولتووری زیندوو.",
-    text: "ئەگەر خاوەنی ماڵی کەلەپووریت، هونەرمەندیت، دامەزراوەی فێرکارییت یان دەتەوێت پشتگیری بکەیت، پەیوەندی بە مسمارەوە بکە.",
+    title: "با ماڵێکی کەلەپووری بکەینە شوێنێکی زیندوو.",
+    text: "هاوکارییەکی کولتووری و هونەری بۆ زیندووکردنەوەی یادەوەری.",
     cta: "پەیوەندی بە مسمارەوە",
   },
 };
@@ -39,37 +36,24 @@ export default function JoinMismarSection({ locale = "ar" }: Props) {
     <section
       id="contact"
       dir={t.dir}
-      className="relative overflow-hidden bg-[#2a1005] px-6 py-24 text-[#f7efe8] md:px-16 md:py-32"
+      className="border-y border-[#f7efe8]/10 bg-[#140804] px-6 py-10 text-[#f7efe8] md:px-16 md:py-12"
     >
-      <div className="absolute inset-0 opacity-25">
-        <img
-          src="/images/join-bg.jpg"
-          alt=""
-          className="h-full w-full object-cover"
-        />
-      </div>
-<div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(47,156,149,0.18),transparent_45%)]" />
-      <div className="absolute inset-0 bg-black/55" />
-
-      <div className="relative z-10 mx-auto max-w-[1100px]">
-        <p className="mb-6 text-xs font-light uppercase tracking-[0.35em] text-[#2f9c95]">
-          {t.eyebrow}
-        </p>
-
-        <h2 className="max-w-[900px] text-[42px] font-light leading-[1.15] md:text-[82px]">
-          {t.title}
-        </h2>
-
-        <p className="mt-8 max-w-[760px] text-base font-light leading-9 text-[#f7efe8]/75 md:text-lg">
-          {t.text}
-        </p>
+      <div className="mx-auto flex max-w-[1400px] flex-col gap-6 md:flex-row md:items-center md:justify-between">
+        <div>
+          <h2 className="text-[24px] font-light leading-tight md:text-[34px]">
+            {t.title}
+          </h2>
+          <p className="mt-3 max-w-[620px] text-sm font-light leading-7 text-[#f7efe8]/62">
+            {t.text}
+          </p>
+        </div>
 
         <Link
           href={`/${locale}/contact`}
-          className="mt-10 inline-flex items-center gap-3 border border-[#f7efe8]/35 px-8 py-4 text-sm font-light transition hover:border-[#2f9c95] hover:bg-[#2f9c95]"
+          className="inline-flex w-fit items-center gap-3 border border-[#f7efe8]/24 px-6 py-3 text-sm font-light transition hover:border-[#2f9c95] hover:bg-[#2f9c95] hover:text-white"
         >
           {t.cta}
-          <ArrowIcon size={17} />
+          <ArrowIcon size={16} />
         </Link>
       </div>
     </section>

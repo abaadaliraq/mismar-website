@@ -1,5 +1,7 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
+import { buildMetadata } from "@/lib/seo";
 
 type Locale = "ar" | "en" | "ku";
 
@@ -16,6 +18,7 @@ const content = {
     back: "العودة للرئيسية",
 
     heroTitle: "الورش والمعارض الفنية",
+    heroImageAlt: "ورش ومعارض فنية تنظمها مؤسسة مسمار في بغداد",
 
     heroText:
       "تؤمن مؤسسة مسمار للفنون أن الفن ليس نشاطاً منفصلاً عن المجتمع، بل أداة حقيقية لإحياء الذاكرة الثقافية، وربط الأجيال الجديدة بتاريخها، وتحويل البيوت التراثية إلى مساحات حيّة للفكر والإبداع والتعلّم.",
@@ -50,6 +53,7 @@ const content = {
     back: "Back Home",
 
     heroTitle: "Workshops & Art Exhibitions",
+    heroImageAlt: "Workshops and art exhibitions organized by MISMAR Foundation in Baghdad",
 
     heroText:
       "Mismar believes that art is not separated from society, but a tool to revive cultural memory and reconnect younger generations with their heritage.",
@@ -84,6 +88,7 @@ const content = {
     back: "گەڕانەوە بۆ سەرەکی",
 
     heroTitle: "وۆرکشۆپ و پێشانگاکانی هونەری",
+    heroImageAlt: "وۆرکشۆپ و پێشانگای هونەری کە دامەزراوەی مسمار لە بەغدا ڕێکی دەخات",
 
     heroText:
       "دامەزراوەی مسمار باوەڕی وایە هونەر ئامرازێکە بۆ زیندووکردنەوەی یادەوەری کولتووری.",
@@ -112,6 +117,15 @@ const content = {
       "ماڵە کەلەپوورییەکان دەبێت ببنە شوێنی زیندووی هونەر و فێربوون.",
   },
 };
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: Locale }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  return buildMetadata(locale, "activities", "activities");
+}
 
 export default async function ActivitiesPage({ params }: Props) {
   const { locale } = await params;
@@ -146,7 +160,7 @@ export default async function ActivitiesPage({ params }: Props) {
         <div className="mt-12 md:mt-0">
           <img
             src="/images/hero.jpg"
-            alt="Mismar Workshops"
+            alt={t.heroImageAlt}
             className="h-[420px] w-full object-cover"
           />
         </div>

@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ArrowLeft, ArrowRight, ExternalLink, FileText } from "lucide-react";
@@ -7,6 +8,7 @@ import {
   projectSlugs,
   type Locale,
 } from "@/lib/projectsContent";
+import { buildCustomMetadata, normalizeLocale } from "@/lib/seo";
 
 export function generateStaticParams() {
   return projectSlugs.flatMap((slug) =>
@@ -15,6 +17,34 @@ export function generateStaticParams() {
       slug,
     })),
   );
+}
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: Locale; slug: string }>;
+}): Promise<Metadata> {
+  const { locale, slug } = await params;
+  const safeLocale = normalizeLocale(locale);
+  const project = getProject(safeLocale, slug);
+
+  if (!project) {
+    return buildCustomMetadata({
+      locale: safeLocale,
+      path: `projects/${slug}`,
+      title: "MISMAR Foundation",
+      description: "MISMAR Foundation project page.",
+      image: "/images/about-ticket.jpg",
+    });
+  }
+
+  return buildCustomMetadata({
+    locale: safeLocale,
+    path: `projects/${slug}`,
+    title: `${project.title} | MISMAR Foundation`,
+    description: project.description,
+    image: project.image,
+  });
 }
 
 export default async function ProjectDetailsPage({

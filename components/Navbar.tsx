@@ -70,14 +70,14 @@ export default function Navbar({ locale = "ar" }: Props) {
         <Link href={`/${locale}`} className="group flex items-center gap-4">
           <img
             src="/images/mismar-logo.png"
-            alt="Mismar"
+            alt={`${t.logoTitle} logo`}
             className="h-11 w-11 object-contain transition duration-500 group-hover:rotate-6"
           />
 
           <div className="hidden md:block">
-            <h2 className="text-sm font-normal text-[#2a1005]/90 transition duration-300 group-hover:text-white">
+            <p className="text-sm font-normal text-[#2a1005]/90 transition duration-300 group-hover:text-white">
               {t.logoTitle}
-            </h2>
+            </p>
             <p className="mt-1 text-[10px] font-normal tracking-[0.24em] text-[#2a1005]/65 transition duration-300 group-hover:text-white/80">
               MISMAR ARTS
             </p>
