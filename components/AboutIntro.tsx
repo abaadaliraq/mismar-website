@@ -23,7 +23,7 @@ const content = {
       </>
     ),
     lead:
-      "منظمة مسمار للفنون مساحة ثقافية تحتضن البيوت التراثية، وتعيد تحويلها إلى منصات للفن والمعارض والورش.",
+      "مؤسسة مسمار للفنون مساحة ثقافية تحتضن البيوت التراثية، وتعيد تحويلها إلى منصات للفن والمعارض والورش.",
     body:
       "من مقرها في بيت التحفيات، تعمل مسمار على دعم الفنانين والشباب، وتنظيم ورش فنية وتراثية وتاريخية تثقيفية، وربط الذاكرة العراقية بالحاضر بلغة معاصرة.",
     button: "المزيد عن مسمار",
@@ -42,9 +42,9 @@ const content = {
       </>
     ),
     lead:
-      "Mismar Organization for Arts is a cultural space that embraces heritage houses and transforms them into platforms for art, exhibitions, and workshops.",
+      "MISMAR Foundation for Arts is a cultural space that embraces heritage houses and transforms them into platforms for art, exhibitions, and workshops.",
     body:
-      "Based at Bayt Al-Tuhafiyat, Mismar supports artists and youth through artistic, heritage, and historical workshops that reconnect Iraqi memory with the present.",
+      "Based at Bayt Al-Tuhafiyat, MISMAR Foundation supports artists and youth through artistic, heritage, and historical workshops that reconnect Iraqi memory with the present.",
     button: "More about Mismar",
   },
 
@@ -61,7 +61,7 @@ const content = {
       </>
     ),
     lead:
-      "ڕێکخراوی مسمار بۆ هونەر شوێنێکی کولتوورییە کە ماڵە کەلەپوورییەکان دەگرێتەوە و دەیانکاتە سەکۆی هونەر و پێشانگا و وۆرکشۆپ.",
+      "دامەزراوەی مسمار بۆ هونەر شوێنێکی کولتوورییە کە ماڵە کەلەپوورییەکان دەگرێتەوە و دەیانکاتە سەکۆی هونەر و پێشانگا و وۆرکشۆپ.",
     body:
       "لە بنکەکەی لە ماڵی التحفیات، مسمار کار دەکات بۆ پشتگیری هونەرمەندان و گەنجان و گرێدانی یادەوەری عێراقی بە ئێستاوە.",
     button: "زیاتر دەربارەی مسمار",

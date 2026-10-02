@@ -11,10 +11,10 @@ const content = {
     back: "العودة للرئيسية",
     title: "ترميم بيوت التراث",
     intro:
-      "تعمل منظمة مسمار للفنون والتنمية المستدامة على إعادة إحياء البيوت والوجهات التراثية المهملة، من خلال ترميمها والحفاظ على أسلوبها المعماري القديم وتحويلها إلى مساحات ثقافية وسياحية وفنية قابلة للحياة من جديد.",
+      "تعمل مؤسسة مسمار للفنون والتنمية المستدامة على إعادة إحياء البيوت والوجهات التراثية المهملة، من خلال ترميمها والحفاظ على أسلوبها المعماري القديم وتحويلها إلى مساحات ثقافية وسياحية وفنية قابلة للحياة من جديد.",
     s1Title: "الترميم ليس طلاءً جديداً",
     s1Text:
-      "ترى منظمة مسمار أن ترميم البيت التراثي لا يعني إزالة ملامحه القديمة أو تحويله إلى بناء حديث بلا ذاكرة، بل يعني فهم روحه المعمارية، واحترام مواده الأصلية، والحفاظ على تفاصيله من أبواب وشبابيك وأقواس وزخارف ومساحات داخلية. الهدف هو إعادة الحياة للمكان من دون قتل شخصيته.",
+      "ترى مؤسسة مسمار أن ترميم البيت التراثي لا يعني إزالة ملامحه القديمة أو تحويله إلى بناء حديث بلا ذاكرة، بل يعني فهم روحه المعمارية، واحترام مواده الأصلية، والحفاظ على تفاصيله من أبواب وشبابيك وأقواس وزخارف ومساحات داخلية. الهدف هو إعادة الحياة للمكان من دون قتل شخصيته.",
     s2Title: "إحياء الوجهات المهملة",
     s2Text:
       "هناك بيوت ووجهات تراثية كثيرة ما زالت مهملة أو مغلقة أو غير مؤهلة لاستقبال الزوار. تعمل مسمار على بناء نموذج يمكن تكراره في أكثر من موقع، بحيث يتم ترميم هذه الأماكن وتحويلها إلى وجهات تستقبل المعارض والورش والجولات الثقافية والزيارات المدرسية والسياحية.",
@@ -30,7 +30,7 @@ const content = {
     back: "Back Home",
     title: "Heritage House Restoration",
     intro:
-      "Mismar works to revive neglected heritage houses and destinations by restoring their architectural identity and transforming them into living cultural, artistic, and touristic spaces.",
+      "MISMAR Foundation works to revive neglected heritage houses and destinations by restoring their architectural identity and transforming them into living cultural, artistic, and touristic spaces.",
     s1Title: "Restoration is not repainting",
     s1Text:
       "Restoring a heritage house means understanding its architectural soul, preserving original materials, and respecting doors, windows, arches, ornaments, and interior proportions.",

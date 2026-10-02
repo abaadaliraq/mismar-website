@@ -1,0 +1,111 @@
+import Link from "next/link";
+import { ArrowLeft, ArrowRight } from "lucide-react";
+
+type Locale = "ar" | "en" | "ku";
+
+type Props = {
+  locale?: Locale;
+};
+
+const ticketImage = "/images/about-ticket.jpg";
+
+const content = {
+  ar: {
+    dir: "rtl",
+    label: "مشاريع ومبادرات المؤسسة",
+    title: "مشاريع ومبادرات المؤسسة",
+    subtitle:
+      "مسارات تراثية ورقمية وثقافية تجمع بيت التحفيات، KISHIB، والمعارض ودعم الفنانين رقمياً.",
+    date: "مشاريع",
+    location: "بغداد / مسمار",
+    cta: "استكشف المشاريع",
+  },
+  en: {
+    dir: "ltr",
+    label: "Foundation Projects",
+    title: "Foundation Projects & Initiatives",
+    subtitle:
+      "Heritage, digital, and cultural paths connecting Bayt Al-Tuhafiyat, KISHIB, exhibitions, and artist support.",
+    date: "WORK",
+    location: "Baghdad / Mismar",
+    cta: "Explore Projects",
+  },
+  ku: {
+    dir: "rtl",
+    label: "پڕۆژەکانی دامەزراوە",
+    title: "پڕۆژە و دەستپێشخەرییەکانی دامەزراوە",
+    subtitle:
+      "ڕێڕەوی کەلەپووری، دیجیتاڵی و کولتووری بۆ ماڵی التحفیات، KISHIB، پێشانگا و پشتگیری هونەرمەندان.",
+    date: "پڕۆژە",
+    location: "بەغدا / مسمار",
+    cta: "بینینی پڕۆژەکان",
+  },
+};
+
+export default function ProjectsTicketCard({ locale = "ar" }: Props) {
+  const t = content[locale] ?? content.ar;
+  const isRtl = t.dir === "rtl";
+  const ArrowIcon = isRtl ? ArrowLeft : ArrowRight;
+
+  return (
+    <section id="projects-preview" dir={t.dir} className="bg-[#f3ede5] py-14">
+      <Link
+        href={`/${locale}/projects`}
+        className="group grid w-full overflow-hidden border-y border-[#2a1005]/15 bg-[#fbf8f3] text-[#2a1005] transition duration-500 hover:border-[#2f9c95]/70 md:grid-cols-[1fr_1.35fr]"
+      >
+        <div className="order-2 grid border-t border-[#2a1005]/15 md:order-1 md:border-l md:border-t-0">
+          <div className="grid grid-cols-[90px_1fr] border-b border-[#2a1005]/15">
+            <div className="flex flex-col items-center justify-center border-l border-[#2a1005]/15 py-5">
+              <span className="text-3xl font-light leading-none">
+                {t.date}
+              </span>
+              <span className="mt-1 text-xs text-[#2a1005]/55">2026</span>
+            </div>
+
+            <div className="flex flex-col justify-center px-6 py-5">
+              <p className="mb-2 text-xs font-light uppercase tracking-[0.28em] text-[#2f9c95]">
+                {t.label}
+              </p>
+
+              <h2 className="text-2xl font-light md:text-3xl">{t.title}</h2>
+
+              <p className="mt-3 text-sm font-light leading-7 text-[#2a1005]/65">
+                {t.subtitle}
+              </p>
+            </div>
+          </div>
+
+          <div className="grid grid-cols-[1fr_150px]">
+            <div className="flex flex-col justify-center px-6 py-5">
+              <p className="text-xs uppercase tracking-[0.18em] text-[#2a1005]/45">
+                LOCATION
+              </p>
+              <p className="mt-1 text-sm font-light">{t.location}</p>
+            </div>
+
+            <div className="border-r border-[#2a1005]/15 bg-[repeating-linear-gradient(90deg,#2a1005_0,#2a1005_2px,transparent_2px,transparent_7px)] opacity-70" />
+          </div>
+
+          <div className="flex items-center gap-3 border-t border-[#2a1005]/15 px-6 py-4 text-sm font-light transition group-hover:text-[#2f9c95]">
+            {t.cta}
+            <ArrowIcon size={16} />
+          </div>
+        </div>
+
+        <div className="order-1 relative h-[260px] overflow-hidden md:order-2 md:h-[340px]">
+          <img
+            src={ticketImage}
+            alt={t.title}
+            className="h-full w-full object-cover transition duration-700 group-hover:scale-105"
+          />
+          <div className="absolute inset-0 bg-black/10" />
+          <div className="absolute left-5 top-5 border border-white/35 bg-white/70 px-4 py-2 backdrop-blur-sm">
+            <p className="text-[10px] uppercase tracking-[0.3em] text-[#2a1005]/60">
+              MISMAR FOUNDATION
+            </p>
+          </div>
+        </div>
+      </Link>
+    </section>
+  );
+}

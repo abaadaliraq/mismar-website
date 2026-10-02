@@ -28,7 +28,7 @@ const content = {
     label: "Heritage Restoration",
     title: "Reviving Forgotten Places",
     subtitle:
-      "Mismar restores neglected heritage houses and transforms them into living cultural and touristic spaces.",
+      "MISMAR Foundation restores neglected heritage houses and transforms them into living cultural and touristic spaces.",
     date: "REST",
     location: "Baghdad / Heritage Houses",
     cta: "Explore Restoration Projects",

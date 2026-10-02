@@ -12,8 +12,8 @@ const ticketImage = "/images/about-ticket.jpg";
 const content = {
   ar: {
     dir: "rtl",
-    label: "نبذة عن المنظمة",
-    title: "منظمة مسمار للفنون",
+    label: "نبذة عن المؤسسة",
+    title: "مؤسسة مسمار للفنون والتنمية المستدامة",
     subtitle: "مساحة ثقافية تعنى بالفنون، التراث، والتنمية المستدامة",
     date: "2026",
     location: "بغداد / بيت التحفيات",
@@ -21,8 +21,8 @@ const content = {
   },
   en: {
     dir: "ltr",
-    label: "About the Organization",
-    title: "Mismar Organization for Arts",
+    label: "About the Foundation",
+    title: "MISMAR Foundation for Arts and Sustainable Development",
     subtitle: "A cultural space dedicated to arts, heritage, and sustainable development",
     date: "2026",
     location: "Baghdad / Bayt Al-Tuhafiyat",
@@ -30,8 +30,8 @@ const content = {
   },
   ku: {
     dir: "rtl",
-    label: "دەربارەی ڕێکخراو",
-    title: "ڕێکخراوی مسمار بۆ هونەر",
+    label: "دەربارەی دامەزراوە",
+    title: "دامەزراوەی مسمار بۆ هونەر و گەشەپێدانی بەردەوام",
     subtitle: "شوێنێکی کولتووری بۆ هونەر، کەلەپوور و گەشەپێدانی بەردەوام",
     date: "2026",
     location: "بەغدا / ماڵی التحفیات",
@@ -53,7 +53,7 @@ export default function AboutTicketCard({ locale = "ar" }: Props) {
         <div className="relative h-[260px] overflow-hidden md:h-[340px]">
           <img
             src={ticketImage}
-            alt="Mismar Organization"
+            alt="MISMAR Foundation"
             className="h-full w-full object-cover transition duration-700 group-hover:scale-105"
           />
           <div className="absolute inset-0 bg-black/10" />

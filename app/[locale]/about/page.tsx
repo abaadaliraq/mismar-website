@@ -9,15 +9,15 @@ const content = {
     dir: "rtl",
     back: "العودة للرئيسية",
 
-    title: "عن منظمة مسمار للفنون",
+    title: "عن مؤسسة مسمار للفنون والتنمية المستدامة",
 
     intro:
-      "منظمة مسمار للفنون والتنمية المستدامة هي مساحة ثقافية تعمل على إعادة إحياء العلاقة بين الفن والتراث والمجتمع. جاءت تسمية «مسمار» من أول مسمار استُخدم في ترميم بيت تراثي، ليصبح الاسم رمزاً لفكرة صغيرة تبدأ من تفصيل بسيط، لكنها قادرة على إعادة الحياة إلى مكان كامل. تؤمن المنظمة أن بيوت التراث ليست جدراناً قديمة أو مباني مهملة، بل ذاكرة مدينة، وحكايات عائلات، وهوية بصرية وثقافية يمكن أن تتحول إلى وجهات فنية وسياحية وتعليمية إذا أُعيد الاهتمام بها بالشكل الصحيح.",
+      "مؤسسة مسمار للفنون والتنمية المستدامة هي مساحة ثقافية تعمل على إعادة إحياء العلاقة بين الفن والتراث والمجتمع. جاءت تسمية «مسمار» من أول مسمار استُخدم في ترميم بيت تراثي، ليصبح الاسم رمزاً لفكرة صغيرة تبدأ من تفصيل بسيط، لكنها قادرة على إعادة الحياة إلى مكان كامل. تؤمن المؤسسة أن بيوت التراث ليست جدراناً قديمة أو مباني مهملة، بل ذاكرة مدينة، وحكايات عائلات، وهوية بصرية وثقافية يمكن أن تتحول إلى وجهات فنية وسياحية وتعليمية إذا أُعيد الاهتمام بها بالشكل الصحيح.",
 
     missionTitle: "رسالتنا",
 
     mission:
-      "رسالة منظمة مسمار هي تحويل بيوت التراث من أماكن منسية إلى فضاءات حيّة للفن والثقافة والسياحة. تعمل المنظمة على دعم ترميم البيوت التراثية وإعادة استخدامها كمراكز للمعارض والورش الفنية والفعاليات الثقافية والبرامج التثقيفية، بحيث تصبح هذه البيوت قادرة على استقبال الفنانين، والطلبة، والزوار، والسياح، والجيل الجديد الذي يحتاج إلى رؤية تراث بلده بشكل حيّ وليس فقط من خلال الصور أو الكتب. لا تنظر مسمار إلى الترميم بوصفه عملاً عمرانياً فقط، بل بوصفه مشروعاً ثقافياً يعيد للمدينة جزءاً من شخصيتها.",
+      "رسالة مؤسسة مسمار هي تحويل بيوت التراث من أماكن منسية إلى فضاءات حيّة للفن والثقافة والسياحة. تعمل المؤسسة على دعم ترميم البيوت التراثية وإعادة استخدامها كمراكز للمعارض والورش الفنية والفعاليات الثقافية والبرامج التثقيفية، بحيث تصبح هذه البيوت قادرة على استقبال الفنانين، والطلبة، والزوار، والسياح، والجيل الجديد الذي يحتاج إلى رؤية تراث بلده بشكل حيّ وليس فقط من خلال الصور أو الكتب. لا تنظر مسمار إلى الترميم بوصفه عملاً عمرانياً فقط، بل بوصفه مشروعاً ثقافياً يعيد للمدينة جزءاً من شخصيتها.",
 
     visionTitle: "رؤيتنا",
 
@@ -42,15 +42,15 @@ const content = {
     dir: "ltr",
     back: "Back Home",
 
-    title: "About Mismar Organization for Arts",
+    title: "About MISMAR Foundation for Arts and Sustainable Development",
 
     intro:
-      "Mismar Organization for Arts and Sustainable Development is a cultural space that reconnects art, heritage, and society. The name “Mismar” comes from the first nail used in restoring a heritage house — a small detail that became a symbol of how one precise act can bring an entire place back to life. Mismar believes heritage houses are not simply old walls or abandoned buildings; they are urban memory, family stories, visual identity, and cultural value that can become artistic, touristic, and educational destinations when properly revived.",
+      "MISMAR Foundation for Arts and Sustainable Development is a cultural space that reconnects art, heritage, and society. The name “Mismar” comes from the first nail used in restoring a heritage house — a small detail that became a symbol of how one precise act can bring an entire place back to life. MISMAR Foundation believes heritage houses are not simply old walls or abandoned buildings; they are urban memory, family stories, visual identity, and cultural value that can become artistic, touristic, and educational destinations when properly revived.",
 
     missionTitle: "Our Mission",
 
     mission:
-      "Mismar’s mission is to transform forgotten heritage houses into living spaces for art, culture, and tourism. The organization works to support restoration and adaptive reuse, turning heritage houses into venues for exhibitions, art workshops, cultural events, and educational programs. These houses should welcome artists, students, visitors, tourists, and younger generations who need to experience their country’s heritage as a living environment, not only as images or historical text.",
+      "MISMAR Foundation’s mission is to transform forgotten heritage houses into living spaces for art, culture, and tourism. The foundation works to support restoration and adaptive reuse, turning heritage houses into venues for exhibitions, art workshops, cultural events, and educational programs. These houses should welcome artists, students, visitors, tourists, and younger generations who need to experience their country’s heritage as a living environment, not only as images or historical text.",
 
     visionTitle: "Our Vision",
 
@@ -75,15 +75,15 @@ const content = {
     dir: "rtl",
     back: "گەڕانەوە بۆ سەرەکی",
 
-    title: "دەربارەی ڕێکخراوی مسمار بۆ هونەر",
+    title: "دەربارەی دامەزراوەی مسمار بۆ هونەر و گەشەپێدانی بەردەوام",
 
     intro:
-      "ڕێکخراوی مسمار بۆ هونەر و گەشەپێدانی بەردەوام شوێنێکی کولتوورییە بۆ گرێدانی هونەر، کەلەپوور و کۆمەڵگا. ناوی «مسمار» لە یەکەم مسمارەوە هاتووە کە لە نۆژەنکردنەوەی ماڵێکی کەلەپووری بەکارهات؛ وردەکارییەکی بچووک کە بووە هێمای دەستپێکردنی ژیانەوەی شوێنێکی تەواو. مسمار باوەڕی وایە ماڵە کەلەپوورییەکان تەنها دیوار و بینای کۆن نین، بەڵکو یادەوەری شار، چیرۆکی خێزانەکان و ناسنامەی بینراو و کولتوورین.",
+      "دامەزراوەی مسمار بۆ هونەر و گەشەپێدانی بەردەوام شوێنێکی کولتوورییە بۆ گرێدانی هونەر، کەلەپوور و کۆمەڵگا. ناوی «مسمار» لە یەکەم مسمارەوە هاتووە کە لە نۆژەنکردنەوەی ماڵێکی کەلەپووری بەکارهات؛ وردەکارییەکی بچووک کە بووە هێمای دەستپێکردنی ژیانەوەی شوێنێکی تەواو. مسمار باوەڕی وایە ماڵە کەلەپوورییەکان تەنها دیوار و بینای کۆن نین، بەڵکو یادەوەری شار، چیرۆکی خێزانەکان و ناسنامەی بینراو و کولتوورین.",
 
     missionTitle: "ئەرکمان",
 
     mission:
-      "ئەرکی مسمار ئەوەیە ماڵە کەلەپوورییە پشتگوێخراوەکان بگۆڕێت بۆ شوێنی زیندووی هونەر، کولتوور و گەشتوگوزار. ڕێکخراوەکە کار دەکات بۆ پشتگیری نۆژەنکردنەوە و بەکارهێنانی نوێی ئەم ماڵانە و گۆڕینیان بۆ شوێنی پێشانگا، وۆرکشۆپی هونەری، چالاکیی کولتووری و بەرنامەی فێرکاری.",
+      "ئەرکی مسمار ئەوەیە ماڵە کەلەپوورییە پشتگوێخراوەکان بگۆڕێت بۆ شوێنی زیندووی هونەر، کولتوور و گەشتوگوزار. دامەزراوەکە کار دەکات بۆ پشتگیری نۆژەنکردنەوە و بەکارهێنانی نوێی ئەم ماڵانە و گۆڕینیان بۆ شوێنی پێشانگا، وۆرکشۆپی هونەری، چالاکیی کولتووری و بەرنامەی فێرکاری.",
 
     visionTitle: "دیدگامان",
 

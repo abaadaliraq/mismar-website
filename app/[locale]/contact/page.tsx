@@ -18,7 +18,7 @@ const content = {
     button: "إرسال الطلب",
     infoTitle: "لماذا تتواصل مع مسمار؟",
     infoText:
-      "تعمل منظمة مسمار على إحياء البيوت التراثية وتحويلها إلى فضاءات ثقافية وسياحية وفنية حيّة، كما تستضيف المعارض والورش الفنية والبرامج الثقافية والتعليمية.",
+      "تعمل مؤسسة مسمار على إحياء البيوت التراثية وتحويلها إلى فضاءات ثقافية وسياحية وفنية حيّة، كما تستضيف المعارض والورش الفنية والبرامج الثقافية والتعليمية.",
   },
 
   en: {
@@ -34,7 +34,7 @@ const content = {
     button: "Send Request",
     infoTitle: "Why Mismar?",
     infoText:
-      "Mismar works to revive heritage houses and transform them into living cultural, artistic, and touristic destinations while hosting workshops, exhibitions, and educational programs.",
+      "MISMAR Foundation works to revive heritage houses and transform them into living cultural, artistic, and touristic destinations while hosting workshops, exhibitions, and educational programs.",
   },
 
   ku: {

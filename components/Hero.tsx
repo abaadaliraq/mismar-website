@@ -63,7 +63,7 @@ const content = {
         href: "/about",
       },
     ],
-    cta: "تواصل مع مسمار",
+    cta: "استكشف مشاريع المؤسسة",
   },
 
   en: {
@@ -111,7 +111,7 @@ const content = {
         href: "/about",
       },
     ],
-    cta: "Contact Mismar",
+    cta: "Explore Foundation Projects",
   },
 
   ku: {
@@ -159,7 +159,7 @@ const content = {
         href: "/about",
       },
     ],
-    cta: "پەیوەندی بە مسمارەوە",
+    cta: "بینینی پڕۆژەکانی دامەزراوە",
   },
 };
 
@@ -215,7 +215,7 @@ export default function Hero({ locale = "ar" }: Props) {
           </p>
 
           <Link
-            href={`/${locale}/contact`}
+            href={`/${locale}/projects`}
             className="mt-9 inline-flex items-center gap-3 border border-white/35 px-7 py-4 text-sm font-light transition hover:border-white hover:bg-white hover:text-[#2a1005]"
           >
             {t.cta}
@@ -227,7 +227,7 @@ export default function Hero({ locale = "ar" }: Props) {
       {/* INFO BAR */}
       <div className="absolute bottom-[70px] left-1/2 z-20 hidden w-[82%] max-w-[1320px] -translate-x-1/2 overflow-hidden bg-[#f5efe6] text-[#2b1207] shadow-2xl md:grid md:grid-cols-[240px_repeat(4,1fr)]">
         <Link
-          href={`/${locale}/contact`}
+          href={`/${locale}/projects`}
           className="flex h-20 items-center justify-center gap-4 bg-[#4f5f35] text-sm font-light text-white transition hover:bg-[#2f9c95]"
         >
           <ArrowIcon size={18} />

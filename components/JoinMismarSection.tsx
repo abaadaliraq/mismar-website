@@ -12,14 +12,14 @@ const content = {
     dir: "rtl",
     eyebrow: "شارك معنا",
     title: "لنحوّل بيتاً تراثياً إلى مساحة حيّة.",
-    text: "إذا كنت صاحب بيت تراثي، فناناً، مؤسسة تعليمية، جهة داعمة، أو ترغب بالمشاركة في إحياء التراث، تواصل مع منظمة مسمار لنصنع معاً أثراً ثقافياً حقيقياً.",
+    text: "إذا كنت صاحب بيت تراثي، فناناً، مؤسسة تعليمية، جهة داعمة، أو ترغب بالمشاركة في إحياء التراث، تواصل مع مؤسسة مسمار لنصنع معاً أثراً ثقافياً حقيقياً.",
     cta: "تواصل مع مسمار",
   },
   en: {
     dir: "ltr",
     eyebrow: "Join Us",
     title: "Let’s turn heritage houses into living cultural spaces.",
-    text: "Whether you are a heritage house owner, artist, educational institution, supporter, or volunteer, Mismar welcomes collaboration to create real cultural impact.",
+    text: "Whether you are a heritage house owner, artist, educational institution, supporter, or volunteer, MISMAR Foundation welcomes collaboration to create real cultural impact.",
     cta: "Contact Mismar",
   },
   ku: {

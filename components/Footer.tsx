@@ -11,10 +11,10 @@ type Props = {
 const content = {
   ar: {
     dir: "rtl",
-    title: "منظمة مسمار للفنون",
+    title: "مؤسسة مسمار للفنون والتنمية المستدامة",
     desc: "مساحة ثقافية لإحياء الفن، التراث، والبيوت التراثية في العراق.",
     links: [
-      { label: "عن المنظمة", href: "about" },
+      { label: "عن المؤسسة", href: "about" },
       { label: "الورش والمعارض", href: "activities" },
       { label: "الترميم", href: "restoration" },
       { label: "تواصل", href: "contact" },
@@ -29,7 +29,7 @@ const content = {
   },
   en: {
     dir: "ltr",
-    title: "Mismar Organization for Arts",
+    title: "MISMAR Foundation for Arts and Sustainable Development",
     desc: "A cultural space for reviving arts, heritage, and heritage houses in Iraq.",
     links: [
       { label: "About", href: "about" },
@@ -47,7 +47,7 @@ const content = {
   },
   ku: {
     dir: "rtl",
-    title: "ڕێکخراوی مسمار بۆ هونەر",
+    title: "دامەزراوەی مسمار بۆ هونەر و گەشەپێدانی بەردەوام",
     desc: "شوێنێکی کولتووری بۆ زیندووکردنەوەی هونەر و کەلەپوور.",
     links: [
       { label: "دەربارە", href: "about" },

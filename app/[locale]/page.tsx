@@ -3,6 +3,7 @@ import AboutIntro from "@/components/AboutIntro";
 import AboutTicketCard from "@/components/AboutTicketCard";
 import WorkshopsTicketCard from "@/components/WorkshopsTicketCard";
 import RestorationTicketCard from "@/components/RestorationTicketCard";
+import ProjectsTicketCard from "@/components/ProjectsTicketCard";
 import JoinMismarSection from "@/components/JoinMismarSection";
 
 
@@ -23,6 +24,7 @@ export default async function LocalePage({
      <AboutTicketCard locale={locale} />
      <WorkshopsTicketCard locale={locale} />
      <RestorationTicketCard locale={locale} />
+     <ProjectsTicketCard locale={locale} />
      <JoinMismarSection locale={locale} />
       
     </main>

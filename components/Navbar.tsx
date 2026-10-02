@@ -12,36 +12,39 @@ type Props = {
 const content = {
   ar: {
     dir: "rtl",
-    logoTitle: "منظمة مسمار للفنون",
+    logoTitle: "مؤسسة مسمار للفنون والتنمية المستدامة",
     links: [
       { label: "الرئيسية", href: "" },
-      { label: "عن المنظمة", href: "about" },
+      { label: "عن المؤسسة", href: "about" },
       { label: "الورش", href: "activities" },
       { label: "الترميم", href: "restoration" },
+      { label: "المشاريع", href: "projects" },
       { label: "قبل وبعد", href: "restoration#before-after" },
       { label: "تواصل", href: "#contact" },
     ],
   },
   en: {
     dir: "ltr",
-    logoTitle: "Mismar Organization for Arts",
+    logoTitle: "MISMAR Foundation for Arts and Sustainable Development",
     links: [
       { label: "Home", href: "" },
       { label: "About", href: "about" },
       { label: "Activities", href: "activities" },
       { label: "Restoration", href: "restoration" },
+      { label: "Projects", href: "projects" },
       { label: "Before / After", href: "restoration#before-after" },
       { label: "Contact", href: "#contact" },
     ],
   },
   ku: {
     dir: "rtl",
-    logoTitle: "ڕێکخراوی مسمار بۆ هونەر",
+    logoTitle: "دامەزراوەی مسمار بۆ هونەر و گەشەپێدانی بەردەوام",
     links: [
       { label: "سەرەکی", href: "" },
       { label: "دەربارە", href: "about" },
       { label: "چالاکییەکان", href: "activities" },
       { label: "نۆژەنکردنەوە", href: "restoration" },
+      { label: "پڕۆژەکان", href: "projects" },
       { label: "پێش / دوای", href: "restoration#before-after" },
       { label: "پەیوەندی", href: "#contact" },
     ],
