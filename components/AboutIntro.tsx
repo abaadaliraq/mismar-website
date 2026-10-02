@@ -151,7 +151,6 @@ export default function AboutIntro({ locale = "ar" }: Props) {
           </div>
 
           <div className="absolute left-[18%] top-[9%] z-40 flex items-start gap-2 text-[#2a1005]">
-            <span className="text-[76px] font-light leading-none">م</span>
             <div className="pt-4 text-xs font-light leading-5 text-[#2a1005]/65">
               {t.established}
               <br />
