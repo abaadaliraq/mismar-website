@@ -82,6 +82,12 @@ export default function ProjectsInitiativesSection({ locale = "ar" }: Props) {
                     {project.description}
                   </p>
 
+                  {project.summary ? (
+                    <p className="mt-4 max-w-[600px] text-sm font-light leading-7 text-[#2a1005]/62">
+                      {project.summary}
+                    </p>
+                  ) : null}
+
                   {action ? (
                     <a
                       href={action.href}

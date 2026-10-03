@@ -1,5 +1,6 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import SiteMotion from "@/components/SiteMotion";
 import { BASE_URL, normalizeLocale } from "@/lib/seo";
 
 const organizationJsonLd = {
@@ -55,9 +56,11 @@ export default async function LocaleLayout({
           }),
         }}
       />
-      <Navbar locale={safeLocale} />
-      {children}
-      <Footer locale={safeLocale} />
+      <SiteMotion>
+        <Navbar locale={safeLocale} />
+        {children}
+        <Footer locale={safeLocale} />
+      </SiteMotion>
     </>
   );
 }

@@ -214,13 +214,6 @@ export default function Hero({ locale = "ar" }: Props) {
             {slide.text}
           </p>
 
-          <Link
-            href={`/${locale}/projects`}
-            className="mt-9 inline-flex items-center gap-3 border border-white/35 px-7 py-4 text-sm font-light transition hover:border-white hover:bg-white hover:text-[#2a1005]"
-          >
-            {t.cta}
-            <ArrowIcon size={17} />
-          </Link>
         </div>
       </div>
 

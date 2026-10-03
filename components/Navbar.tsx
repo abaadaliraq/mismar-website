@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
 
 type Locale = "ar" | "en" | "ku";
@@ -53,12 +54,42 @@ const content = {
 
 export default function Navbar({ locale = "ar" }: Props) {
   const pathname = usePathname();
+  const [query, setQuery] = useState("");
+  const [hash, setHash] = useState("");
   const t = content[locale] ?? content.ar;
+
+  useEffect(() => {
+    const updateLocationParts = () => {
+      setQuery(window.location.search);
+      setHash(window.location.hash);
+    };
+
+    updateLocationParts();
+    window.addEventListener("hashchange", updateLocationParts);
+    window.addEventListener("popstate", updateLocationParts);
+
+    return () => {
+      window.removeEventListener("hashchange", updateLocationParts);
+      window.removeEventListener("popstate", updateLocationParts);
+    };
+  }, [pathname]);
 
   const makeHref = (href: string) => {
     if (href === "") return `/${locale}`;
     if (href.startsWith("#")) return `/${locale}${href}`;
     return `/${locale}/${href}`;
+  };
+
+  const makeLocaleHref = (nextLocale: Locale) => {
+    const segments = pathname.split("/");
+
+    if (segments[1] === "ar" || segments[1] === "en" || segments[1] === "ku") {
+      segments[1] = nextLocale;
+    } else {
+      segments.splice(1, 0, nextLocale);
+    }
+
+    return `${segments.join("/")}${query}${hash}`;
   };
 
   return (
@@ -75,10 +106,10 @@ export default function Navbar({ locale = "ar" }: Props) {
           />
 
           <div className="hidden md:block">
-            <p className="text-sm font-normal text-[#2a1005]/90 transition duration-300 group-hover:text-white">
+            <p className="text-sm font-normal text-white/90 transition duration-300 group-hover:text-white">
               {t.logoTitle}
             </p>
-            <p className="mt-1 text-[10px] font-normal tracking-[0.24em] text-[#2a1005]/65 transition duration-300 group-hover:text-white/80">
+            <p className="mt-1 text-[10px] font-normal tracking-[0.24em] text-white/70 transition duration-300 group-hover:text-white/85">
               MISMAR ARTS
             </p>
           </div>
@@ -107,17 +138,17 @@ export default function Navbar({ locale = "ar" }: Props) {
         </nav>
 
         <div className="flex items-center gap-3 text-xs font-normal" dir="ltr">
-          <Link href="/ar" className="text-[#2a1005]/65 transition hover:text-white">
-            AR
-          </Link>
-          <span className="text-[#2a1005]/35">/</span>
-          <Link href="/en" className="text-[#2a1005]/65 transition hover:text-white">
-            EN
-          </Link>
-          <span className="text-[#2a1005]/35">/</span>
-          <Link href="/ku" className="text-[#2a1005]/65 transition hover:text-white">
-            KU
-          </Link>
+            <Link href={makeLocaleHref("ar")} className="text-white/75 transition hover:text-white">
+              AR
+            </Link>
+            <span className="text-white/35">/</span>
+            <Link href={makeLocaleHref("en")} className="text-white/75 transition hover:text-white">
+              EN
+            </Link>
+            <span className="text-white/35">/</span>
+            <Link href={makeLocaleHref("ku")} className="text-white/75 transition hover:text-white">
+              KU
+            </Link>
         </div>
       </div>
     </header>

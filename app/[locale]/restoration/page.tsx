@@ -7,6 +7,8 @@ import { buildMetadata } from "@/lib/seo";
 
 type Locale = "ar" | "en" | "ku";
 
+const houseProjectUrl = "https://abaadaliraq.github.io/mismar-hoa/";
+
 const content = {
   ar: {
     dir: "rtl",
@@ -27,6 +29,7 @@ const content = {
     sliderTitle: "قبل وبعد الترميم",
     sliderText:
       "في هذا المثال، تم ترميم بيت تراثي بالكامل مع الحفاظ على أسلوبه المعماري القديم وروحه الأصلية، ليعود كمكان قابل لاستقبال الأنشطة الثقافية والفنية.",
+    projectDetails: "تفاصيل المشروع",
   },
   en: {
     dir: "ltr",
@@ -47,6 +50,7 @@ const content = {
     sliderTitle: "Before and After Restoration",
     sliderText:
       "This example shows a fully restored heritage house while preserving its original architectural character.",
+    projectDetails: "Project Details",
   },
   ku: {
     dir: "rtl",
@@ -67,6 +71,7 @@ const content = {
     sliderTitle: "پێش و دوای نۆژەنکردنەوە",
     sliderText:
       "ئەم نموونەیە ماڵێکی کەلەپوورییە کە بە پاراستنی شێوازی تەلارسازی کۆن نۆژەن کراوەتەوە.",
+    projectDetails: "وردەکاریی پڕۆژە",
   },
 };
 
@@ -143,6 +148,15 @@ export default async function RestorationPage({
           <p className="mt-5 text-sm font-light leading-8 text-[#2a1005]/70 md:text-base">
             {t.sliderText}
           </p>
+          <a
+            href={houseProjectUrl}
+            target="_blank"
+            rel="noreferrer"
+            className="mt-7 inline-flex items-center gap-3 border border-[#2a1005]/25 px-7 py-3 text-sm font-light transition hover:border-[#2f9c95] hover:bg-[#2f9c95] hover:text-[#f7efe8]"
+          >
+            {t.projectDetails}
+            <ArrowIcon size={16} />
+          </a>
         </div>
 
         <BeforeAfterSlider />
