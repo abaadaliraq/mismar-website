@@ -86,7 +86,7 @@ export default async function ContactPage({
       <section className="relative overflow-hidden border-b border-[#2a1005]/10 px-6 pb-16 pt-32 md:px-16">
         <div className="absolute inset-0 opacity-10">
           <img
-            src="/images/contact-bg.jpg"
+            src="/images/contact.jpg"
             alt=""
             className="h-full w-full object-cover"
           />
@@ -113,7 +113,7 @@ export default async function ContactPage({
 
           <div className="overflow-hidden">
             <img
-              src="/images/contact-side.jpg"
+              src="/images/contact.jpg"
               alt={t.contactImageAlt}
               className="h-[300px] w-full object-cover md:h-[520px]"
             />
