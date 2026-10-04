@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ArrowLeft, ArrowRight } from "lucide-react";
+import { ArrowLeft, ArrowRight, FileText } from "lucide-react";
 import { getProjectsContent, type Locale } from "@/lib/projectsContent";
 
 type Props = {
@@ -11,7 +11,7 @@ export default function ProjectsInitiativesSection({ locale = "ar" }: Props) {
   const isRtl = t.dir === "rtl";
   const ArrowIcon = isRtl ? ArrowLeft : ArrowRight;
   const buttonClass =
-    "mt-8 inline-flex w-fit items-center gap-3 border border-[#2a1005]/25 px-7 py-3 text-sm font-light transition hover:border-[#2f9c95] hover:bg-[#2f9c95] hover:text-[#f7efe8]";
+    "inline-flex w-fit items-center gap-3 border border-[#2a1005]/25 px-7 py-3 text-sm font-light transition hover:border-[#2f9c95] hover:bg-[#2f9c95] hover:text-[#f7efe8]";
 
   const opensInNewTab = (href: string) =>
     href.startsWith("http") || href.endsWith(".pdf");
@@ -44,6 +44,7 @@ export default function ProjectsInitiativesSection({ locale = "ar" }: Props) {
           {t.items.map((project, index) => {
             const imageFirst = index % 2 === 0;
             const action = project.action;
+            const downloads = project.downloads ?? (project.download ? [project.download] : []);
 
             return (
               <article
@@ -88,25 +89,40 @@ export default function ProjectsInitiativesSection({ locale = "ar" }: Props) {
                     </p>
                   ) : null}
 
-                  {action ? (
-                    <a
-                      href={action.href}
-                      target={opensInNewTab(action.href) ? "_blank" : undefined}
-                      rel={opensInNewTab(action.href) ? "noreferrer" : undefined}
-                      className={buttonClass}
-                    >
-                      {action.label}
-                      <ArrowIcon size={16} />
-                    </a>
-                  ) : (
-                    <Link
-                      href={`/${locale}/projects/${project.slug}`}
-                      className={buttonClass}
-                    >
-                      {t.viewProject}
-                      <ArrowIcon size={16} />
-                    </Link>
-                  )}
+                  <div className="mt-8 flex flex-wrap gap-3">
+                    {action ? (
+                      <a
+                        href={action.href}
+                        target={opensInNewTab(action.href) ? "_blank" : undefined}
+                        rel={opensInNewTab(action.href) ? "noreferrer" : undefined}
+                        className={buttonClass}
+                      >
+                        {action.label}
+                        <ArrowIcon size={16} />
+                      </a>
+                    ) : (
+                      <Link
+                        href={`/${locale}/projects/${project.slug}`}
+                        className={buttonClass}
+                      >
+                        {t.viewProject}
+                        <ArrowIcon size={16} />
+                      </Link>
+                    )}
+
+                    {downloads.map((download) => (
+                      <a
+                        key={download.href}
+                        href={download.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className={buttonClass}
+                      >
+                        {download.label}
+                        <FileText size={16} />
+                      </a>
+                    ))}
+                  </div>
                 </div>
               </article>
             );

@@ -19,6 +19,8 @@ export type ProjectContentItem = {
   summary?: string;
   details: string;
   action?: ProjectExternalLink;
+  download?: ProjectPdfLink;
+  downloads?: ProjectPdfLink[];
   pdfs?: ProjectPdfLink[];
   visit?: ProjectExternalLink;
   externalLinks?: ProjectExternalLink[];
@@ -85,6 +87,20 @@ export const projectsSectionContent: Record<
           label: "عرض المشروع",
           href: projectLinks.baytProject,
         },
+        download: {
+          label: "تحميل ملف المشروع",
+          href: "/pdfs/projects/house-of-antiques-project-ar.pdf",
+        },
+        downloads: [
+          {
+            label: "ملف المشروع العربي",
+            href: "/pdfs/projects/house-of-antiques-project-ar.pdf",
+          },
+          {
+            label: "ملف المشروع الإنكليزي",
+            href: "/pdfs/projects/house-of-antiques-project-en.pdf",
+          },
+        ],
       },
       {
         slug: "kishib",
@@ -104,6 +120,16 @@ export const projectsSectionContent: Record<
           label: "زيارة المبادرة",
           href: projectLinks.kishibInitiative,
         },
+        downloads: [
+          {
+            label: "ملف المشروع – العربية",
+            href: "/pdfs/projects/kishib-project-ar.pdf",
+          },
+          {
+            label: "ملف المشروع – English",
+            href: "/pdfs/projects/kishib-project-en.pdf",
+          },
+        ],
       },
       {
         slug: "naima-baghdad-memory",
@@ -180,6 +206,20 @@ export const projectsSectionContent: Record<
           label: "View Project",
           href: projectLinks.baytProject,
         },
+        download: {
+          label: "Download Project Profile",
+          href: "/pdfs/projects/house-of-antiques-project-en.pdf",
+        },
+        downloads: [
+          {
+            label: "Arabic Project Profile",
+            href: "/pdfs/projects/house-of-antiques-project-ar.pdf",
+          },
+          {
+            label: "English Project Profile",
+            href: "/pdfs/projects/house-of-antiques-project-en.pdf",
+          },
+        ],
       },
       {
         slug: "kishib",
@@ -199,6 +239,16 @@ export const projectsSectionContent: Record<
           label: "Visit Initiative",
           href: projectLinks.kishibInitiative,
         },
+        downloads: [
+          {
+            label: "Project Profile – Arabic",
+            href: "/pdfs/projects/kishib-project-ar.pdf",
+          },
+          {
+            label: "Project Profile – English",
+            href: "/pdfs/projects/kishib-project-en.pdf",
+          },
+        ],
       },
       {
         slug: "naima-baghdad-memory",
@@ -275,6 +325,16 @@ export const projectsSectionContent: Record<
           label: "بینینی پڕۆژە",
           href: projectLinks.baytProject,
         },
+        downloads: [
+          {
+            label: "فایلی عەرەبیی پڕۆژە",
+            href: "/pdfs/projects/house-of-antiques-project-ar.pdf",
+          },
+          {
+            label: "فایلی ئینگلیزیی پڕۆژە",
+            href: "/pdfs/projects/house-of-antiques-project-en.pdf",
+          },
+        ],
       },
       {
         slug: "kishib",
@@ -294,6 +354,16 @@ export const projectsSectionContent: Record<
           label: "سەردانی دەستپێشخەری",
           href: projectLinks.kishibInitiative,
         },
+        downloads: [
+          {
+            label: "فایلی پڕۆژە – العربية",
+            href: "/pdfs/projects/kishib-project-ar.pdf",
+          },
+          {
+            label: "فایلی پڕۆژە – English",
+            href: "/pdfs/projects/kishib-project-en.pdf",
+          },
+        ],
       },
       {
         slug: "naima-baghdad-memory",

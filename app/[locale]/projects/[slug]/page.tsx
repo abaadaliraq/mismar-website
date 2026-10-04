@@ -63,6 +63,7 @@ export default async function ProjectDetailsPage({
 
   const isRtl = t.dir === "rtl";
   const ArrowIcon = isRtl ? ArrowLeft : ArrowRight;
+  const downloads = project.downloads ?? (project.download ? [project.download] : []);
   const opensInNewTab = (href: string) =>
     href.startsWith("http") || href.endsWith(".pdf");
 
@@ -104,16 +105,33 @@ export default async function ProjectDetailsPage({
             {project.details}
           </p>
 
-          {project.visit && (
-            <a
-              href={project.visit.href}
-              target={opensInNewTab(project.visit.href) ? "_blank" : undefined}
-              rel={opensInNewTab(project.visit.href) ? "noreferrer" : undefined}
-              className="mt-9 inline-flex items-center gap-3 bg-[#2a1005] px-7 py-3 text-sm font-light text-[#f7efe8] transition hover:bg-[#2f9c95]"
-            >
-              {project.visit.label || t.visitLabel}
-              <ExternalLink size={15} />
-            </a>
+          {(project.visit || downloads.length > 0) && (
+            <div className="mt-9 flex flex-wrap gap-3">
+              {project.visit && (
+                <a
+                  href={project.visit.href}
+                  target={opensInNewTab(project.visit.href) ? "_blank" : undefined}
+                  rel={opensInNewTab(project.visit.href) ? "noreferrer" : undefined}
+                  className="inline-flex items-center gap-3 bg-[#2a1005] px-7 py-3 text-sm font-light text-[#f7efe8] transition hover:bg-[#2f9c95]"
+                >
+                  {project.visit.label || t.visitLabel}
+                  <ExternalLink size={15} />
+                </a>
+              )}
+
+              {downloads.map((download) => (
+                <a
+                  key={download.href}
+                  href={download.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-3 border border-[#2a1005]/20 px-7 py-3 text-sm font-light transition hover:border-[#2f9c95] hover:text-[#2f9c95]"
+                >
+                  {download.label}
+                  <FileText size={15} />
+                </a>
+              ))}
+            </div>
           )}
         </div>
 

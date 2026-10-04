@@ -204,14 +204,32 @@ export default function Footer({ locale = "ar" }: Props) {
           ))}
         </div>
 
-        <div className="mt-6 flex flex-col gap-2 text-xs font-light uppercase tracking-[0.22em] text-white/54 md:flex-row md:items-center md:justify-between">
-          <p>© 2026 MISMAR FOUNDATION</p>
+        <div
+          dir="ltr"
+          className="mt-6 grid items-center gap-3 text-center text-xs font-light uppercase tracking-[0.22em] text-white/54 md:grid-cols-3"
+        >
           <a
             href="mailto:info@mismararts.com"
-            className="transition hover:text-[#2f9c95]"
+            className="transition hover:text-[#2f9c95] md:justify-self-start"
           >
             info@mismararts.com
           </a>
+
+          <a
+            href="https://www.abaad-aliraq.com/"
+            target="_blank"
+            rel="noreferrer"
+            className="group inline-flex items-center justify-center gap-2 text-[10px] tracking-[0.16em] text-white/48 transition hover:text-[#2f9c95] md:justify-self-center"
+          >
+            <img
+              src="/images/abaad-logo.png"
+              alt="Abaad Al-Iraq logo"
+              className="h-5 w-5 object-contain opacity-65 transition group-hover:opacity-100"
+            />
+            <span>Developed by Abaad Al-Iraq</span>
+          </a>
+
+          <p className="md:justify-self-end">© 2026 MISMAR FOUNDATION</p>
         </div>
       </div>
     </footer>
