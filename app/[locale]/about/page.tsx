@@ -11,12 +11,12 @@ const content = {
     dir: "rtl",
     back: "العودة للرئيسية",
 
-    title: "عن مؤسسة مسمار للفنون والتنمية المستدامة",
+    title: "عن مؤسسة مسمار للثقافة والتنمية المستدامة",
     heroImageAlt: "بيت تراثي في بغداد ضمن عمل مؤسسة مسمار",
     stripImageAlt: "تفاصيل تراثية من بيت بغدادي ضمن مشاريع مؤسسة مسمار",
 
     intro:
-      "مؤسسة مسمار للفنون والتنمية المستدامة هي مساحة ثقافية تعمل على إعادة إحياء العلاقة بين الفن والتراث والمجتمع. جاءت تسمية «مسمار» من أول مسمار استُخدم في ترميم بيت تراثي، ليصبح الاسم رمزاً لفكرة صغيرة تبدأ من تفصيل بسيط، لكنها قادرة على إعادة الحياة إلى مكان كامل. تؤمن المؤسسة أن بيوت التراث ليست جدراناً قديمة أو مباني مهملة، بل ذاكرة مدينة، وحكايات عائلات، وهوية بصرية وثقافية يمكن أن تتحول إلى وجهات فنية وسياحية وتعليمية إذا أُعيد الاهتمام بها بالشكل الصحيح.",
+      "مؤسسة مسمار للثقافة والتنمية المستدامة هي مساحة ثقافية تعمل على إعادة إحياء العلاقة بين الفن والتراث والمجتمع. جاءت تسمية «مسمار» من أول مسمار استُخدم في ترميم بيت تراثي، ليصبح الاسم رمزاً لفكرة صغيرة تبدأ من تفصيل بسيط، لكنها قادرة على إعادة الحياة إلى مكان كامل. تؤمن المؤسسة أن بيوت التراث ليست جدراناً قديمة أو مباني مهملة، بل ذاكرة مدينة، وحكايات عائلات، وهوية بصرية وثقافية يمكن أن تتحول إلى وجهات فنية وسياحية وتعليمية إذا أُعيد الاهتمام بها بالشكل الصحيح.",
 
     missionTitle: "رسالتنا",
 
@@ -46,12 +46,12 @@ const content = {
     dir: "ltr",
     back: "Back Home",
 
-    title: "About MISMAR Foundation for Arts and Sustainable Development",
+    title: "About MISMAR Foundation for Culture and Sustainable Development",
     heroImageAlt: "Baghdad heritage house connected to MISMAR Foundation work",
     stripImageAlt: "Heritage details from a Baghdad house in MISMAR Foundation projects",
 
     intro:
-      "MISMAR Foundation for Arts and Sustainable Development is a cultural space that reconnects art, heritage, and society. The name “Mismar” comes from the first nail used in restoring a heritage house — a small detail that became a symbol of how one precise act can bring an entire place back to life. MISMAR Foundation believes heritage houses are not simply old walls or abandoned buildings; they are urban memory, family stories, visual identity, and cultural value that can become artistic, touristic, and educational destinations when properly revived.",
+      "MISMAR Foundation for Culture and Sustainable Development is a cultural space that reconnects art, heritage, and society. The name “Mismar” comes from the first nail used in restoring a heritage house — a small detail that became a symbol of how one precise act can bring an entire place back to life. MISMAR Foundation believes heritage houses are not simply old walls or abandoned buildings; they are urban memory, family stories, visual identity, and cultural value that can become artistic, touristic, and educational destinations when properly revived.",
 
     missionTitle: "Our Mission",
 
@@ -81,12 +81,12 @@ const content = {
     dir: "rtl",
     back: "گەڕانەوە بۆ سەرەکی",
 
-    title: "دەربارەی دامەزراوەی مسمار بۆ هونەر و گەشەپێدانی بەردەوام",
+    title: "دەربارەی دامەزراوەی مسمار بۆ کولتوور و گەشەپێدانی بەردەوام",
     heroImageAlt: "ماڵێکی کەلەپووری لە بەغدا لە کاری دامەزراوەی مسمار",
     stripImageAlt: "وردەکاری کەلەپووری لە ماڵێکی بەغدادی لە پڕۆژەکانی مسمار",
 
     intro:
-      "دامەزراوەی مسمار بۆ هونەر و گەشەپێدانی بەردەوام شوێنێکی کولتوورییە بۆ گرێدانی هونەر، کەلەپوور و کۆمەڵگا. ناوی «مسمار» لە یەکەم مسمارەوە هاتووە کە لە نۆژەنکردنەوەی ماڵێکی کەلەپووری بەکارهات؛ وردەکارییەکی بچووک کە بووە هێمای دەستپێکردنی ژیانەوەی شوێنێکی تەواو. مسمار باوەڕی وایە ماڵە کەلەپوورییەکان تەنها دیوار و بینای کۆن نین، بەڵکو یادەوەری شار، چیرۆکی خێزانەکان و ناسنامەی بینراو و کولتوورین.",
+      "دامەزراوەی مسمار بۆ کولتوور و گەشەپێدانی بەردەوام شوێنێکی کولتوورییە بۆ گرێدانی هونەر، کەلەپوور و کۆمەڵگا. ناوی «مسمار» لە یەکەم مسمارەوە هاتووە کە لە نۆژەنکردنەوەی ماڵێکی کەلەپووری بەکارهات؛ وردەکارییەکی بچووک کە بووە هێمای دەستپێکردنی ژیانەوەی شوێنێکی تەواو. مسمار باوەڕی وایە ماڵە کەلەپوورییەکان تەنها دیوار و بینای کۆن نین، بەڵکو یادەوەری شار، چیرۆکی خێزانەکان و ناسنامەی بینراو و کولتوورین.",
 
     missionTitle: "ئەرکمان",
 
@@ -96,7 +96,7 @@ const content = {
     visionTitle: "دیدگامان",
 
     vision:
-      "مسمار دەیەوێت ببێتە نموونەیەکی عێراقی بۆ گرێدانی کەلەپوور بە هونەر و گەشەپێدانی بەردەوام. لە بەغدا ژمارەیەکی زۆر لە ماڵە کەلەپوورییەکان ماون، کە زۆریان تووشی پشتگوێخستن و کەمیی چاکسازی بوون. کێشەکە تەنها بیناکە نییە؛ زۆرجار کوچە و ڕێگە و خزمەتگوزاری دەوروبەریش پێویستی بە چاودێری هەیە. بۆیە مسمار پێی وایە زیندووکردنەوەی ماڵی کەلەپووری دەبێت شوێن و دەوروبەری پێکەوە بگرێتەوە.",
+      "مسمار دەیەوێت ببێتە نموونەیەکی عێراقی بۆ گرێدانی کەلەپوور بە کولتوور و گەشەپێدانی بەردەوام. لە بەغدا ژمارەیەکی زۆر لە ماڵە کەلەپوورییەکان ماون، کە زۆریان تووشی پشتگوێخستن و کەمیی چاکسازی بوون. کێشەکە تەنها بیناکە نییە؛ زۆرجار کوچە و ڕێگە و خزمەتگوزاری دەوروبەریش پێویستی بە چاودێری هەیە. بۆیە مسمار پێی وایە زیندووکردنەوەی ماڵی کەلەپووری دەبێت شوێن و دەوروبەری پێکەوە بگرێتەوە.",
 
     goalsTitle: "ئامانجەکانمان",
 

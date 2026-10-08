@@ -13,7 +13,7 @@ const content = {
   ar: {
     dir: "rtl",
     label: "نبذة عن المؤسسة",
-    title: "مؤسسة مسمار للفنون والتنمية المستدامة",
+    title: "مؤسسة مسمار للثقافة والتنمية المستدامة",
     subtitle: "مساحة ثقافية تعنى بالفنون، التراث، والتنمية المستدامة",
     date: "2026",
     location: "بغداد / بيت التحفيات",
@@ -23,7 +23,7 @@ const content = {
   en: {
     dir: "ltr",
     label: "About the Foundation",
-    title: "MISMAR Foundation for Arts and Sustainable Development",
+    title: "MISMAR Foundation for Culture and Sustainable Development",
     subtitle: "A cultural space dedicated to arts, heritage, and sustainable development",
     date: "2026",
     location: "Baghdad / Bayt Al-Tuhafiyat",
@@ -33,7 +33,7 @@ const content = {
   ku: {
     dir: "rtl",
     label: "دەربارەی دامەزراوە",
-    title: "دامەزراوەی مسمار بۆ هونەر و گەشەپێدانی بەردەوام",
+    title: "دامەزراوەی مسمار بۆ کولتوور و گەشەپێدانی بەردەوام",
     subtitle: "شوێنێکی کولتووری بۆ هونەر، کەلەپوور و گەشەپێدانی بەردەوام",
     date: "2026",
     location: "بەغدا / ماڵی التحفیات",

@@ -16,7 +16,7 @@ const content = {
     eyebrow: "مسمار",
     title: "شروط استخدام الموقع",
     intro:
-      "تحدد هذه الشروط قواعد استخدام موقع مؤسسة مسمار للفنون والتنمية المستدامة والمواد المنشورة فيه.",
+      "تحدد هذه الشروط قواعد استخدام موقع مؤسسة مسمار للثقافة والتنمية المستدامة والمواد المنشورة فيه.",
     sections: [
       {
         title: "طبيعة الموقع",
@@ -70,7 +70,7 @@ const content = {
     eyebrow: "Mismar",
     title: "Website Terms of Use",
     intro:
-      "These terms define the rules for using the website of MISMAR Foundation for Arts and Sustainable Development and the materials published on it.",
+      "These terms define the rules for using the website of MISMAR Foundation for Culture and Sustainable Development and the materials published on it.",
     sections: [
       {
         title: "Website Purpose",
@@ -124,7 +124,7 @@ const content = {
     eyebrow: "مسمار",
     title: "مەرجەکانی بەکارهێنانی ماڵپەڕ",
     intro:
-      "ئەم مەرجانە ڕێساکانی بەکارهێنانی ماڵپەڕی دامەزراوەی مسمار بۆ هونەر و گەشەپێدانی بەردەوام و ئەو ماددانە دیاری دەکەن کە تێیدا بڵاو دەکرێنەوە.",
+      "ئەم مەرجانە ڕێساکانی بەکارهێنانی ماڵپەڕی دامەزراوەی مسمار بۆ کولتوور و گەشەپێدانی بەردەوام و ئەو ماددانە دیاری دەکەن کە تێیدا بڵاو دەکرێنەوە.",
     sections: [
       {
         title: "سروشتی ماڵپەڕ",

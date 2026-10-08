@@ -17,11 +17,11 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),
   title: {
-    default: "MISMAR Foundation for Arts and Sustainable Development",
+    default: "MISMAR Foundation for Culture and Sustainable Development",
     template: "%s",
   },
   description:
-    "MISMAR Foundation for Arts and Sustainable Development in Baghdad, Iraq.",
+    "MISMAR Foundation for Culture and Sustainable Development in Baghdad, Iraq.",
 };
 
 export default async function RootLayout({

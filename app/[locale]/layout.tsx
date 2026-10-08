@@ -6,11 +6,11 @@ import { BASE_URL, normalizeLocale } from "@/lib/seo";
 const organizationJsonLd = {
   "@context": "https://schema.org",
   "@type": ["NGO", "Organization"],
-  name: "MISMAR Foundation for Arts and Sustainable Development",
+  name: "MISMAR Foundation for Culture and Sustainable Development",
   alternateName: [
     "MISMAR Foundation",
-    "مؤسسة مسمار للفنون والتنمية المستدامة",
-    "دامەزراوەی مسمار بۆ هونەر و گەشەپێدانی بەردەوام",
+    "مؤسسة مسمار للثقافة والتنمية المستدامة",
+    "دامەزراوەی مسمار بۆ کولتوور و گەشەپێدانی بەردەوام",
   ],
   url: BASE_URL,
   email: "info@mismararts.com",
@@ -25,7 +25,7 @@ const websiteJsonLd = {
   "@context": "https://schema.org",
   "@type": "WebSite",
   name: "MISMAR Foundation",
-  alternateName: "MISMAR Foundation for Arts and Sustainable Development",
+  alternateName: "MISMAR Foundation for Culture and Sustainable Development",
   url: BASE_URL,
 };
 

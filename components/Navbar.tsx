@@ -13,7 +13,7 @@ type Props = {
 const content = {
   ar: {
     dir: "rtl",
-    logoTitle: "مؤسسة مسمار للفنون والتنمية المستدامة",
+    logoTitle: "مؤسسة مسمار للثقافة والتنمية المستدامة",
     links: [
       { label: "الرئيسية", href: "" },
       { label: "عن المؤسسة", href: "about" },
@@ -26,7 +26,7 @@ const content = {
   },
   en: {
     dir: "ltr",
-    logoTitle: "MISMAR Foundation for Arts and Sustainable Development",
+    logoTitle: "MISMAR Foundation for Culture and Sustainable Development",
     links: [
       { label: "Home", href: "" },
       { label: "About", href: "about" },
@@ -39,7 +39,7 @@ const content = {
   },
   ku: {
     dir: "rtl",
-    logoTitle: "دامەزراوەی مسمار بۆ هونەر و گەشەپێدانی بەردەوام",
+    logoTitle: "دامەزراوەی مسمار بۆ کولتوور و گەشەپێدانی بەردەوام",
     links: [
       { label: "سەرەکی", href: "" },
       { label: "دەربارە", href: "about" },

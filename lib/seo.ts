@@ -34,19 +34,19 @@ const seoContent: Record<
   home: {
     ar: {
       title:
-        "مؤسسة مسمار للفنون والتنمية المستدامة | إحياء التراث والفنون في بغداد",
+        "مؤسسة مسمار للثقافة والتنمية المستدامة | إحياء التراث والفنون في بغداد",
       description:
-        "مؤسسة مسمار للفنون والتنمية المستدامة تعمل على إحياء التراث في العراق، ترميم البيوت التراثية في بغداد، ودعم الفنون والمعارض والورش الثقافية.",
+        "مؤسسة مسمار للثقافة والتنمية المستدامة تعمل على إحياء التراث في العراق، ترميم البيوت التراثية في بغداد، ودعم الفنون والمعارض والورش الثقافية.",
       image: "/images/hero-1.jpg",
     },
     en: {
-      title: "MISMAR Foundation for Arts & Sustainable Development | Baghdad",
+      title: "MISMAR Foundation for Culture & Sustainable Development | Baghdad",
       description:
-        "MISMAR Foundation for Arts and Sustainable Development supports Iraqi cultural heritage, heritage restoration in Baghdad, arts, culture, exhibitions, and creative workshops.",
+        "MISMAR Foundation for Culture and Sustainable Development supports Iraqi cultural heritage, heritage restoration in Baghdad, arts, culture, exhibitions, and creative workshops.",
       image: "/images/hero-1.jpg",
     },
     ku: {
-      title: "دامەزراوەی مسمار بۆ هونەر و گەشەپێدانی بەردەوام | بەغدا",
+      title: "دامەزراوەی مسمار بۆ کولتوور و گەشەپێدانی بەردەوام | بەغدا",
       description:
         "دامەزراوەی مسمار کار دەکات بۆ زیندووکردنەوەی کەلەپووری عێراق، نۆژەنکردنەوەی ماڵە کەلەپوورییەکانی بەغدا و پشتگیری هونەر و کولتوور.",
       image: "/images/hero-1.jpg",
@@ -54,9 +54,9 @@ const seoContent: Record<
   },
   about: {
     ar: {
-      title: "عن مؤسسة مسمار | الفنون والتنمية المستدامة في بغداد",
+      title: "عن مؤسسة مسمار | الثقافة والتنمية المستدامة في بغداد",
       description:
-        "تعرف على مؤسسة مسمار للفنون والتنمية المستدامة ورؤيتها في ربط الفنون والتراث في بغداد بإحياء البيوت التراثية والمبادرات الثقافية.",
+        "تعرف على مؤسسة مسمار للثقافة والتنمية المستدامة ورؤيتها في ربط الفنون والتراث في بغداد بإحياء البيوت التراثية والمبادرات الثقافية.",
       image: "/images/about-hero.jpg",
     },
     en: {
@@ -136,7 +136,7 @@ const seoContent: Record<
     ar: {
       title: "تواصل مع مؤسسة مسمار | بغداد",
       description:
-        "تواصل مع مؤسسة مسمار للفنون والتنمية المستدامة للتعاون في مشاريع التراث، الورش الفنية، المعارض، والترميم في بغداد.",
+        "تواصل مع مؤسسة مسمار للثقافة والتنمية المستدامة للتعاون في مشاريع التراث، الورش الفنية، المعارض، والترميم في بغداد.",
       image: "/images/contact-side.jpg",
     },
     en: {
@@ -156,13 +156,13 @@ const seoContent: Record<
     ar: {
       title: "سياسة الخصوصية | مؤسسة مسمار",
       description:
-        "سياسة الخصوصية الخاصة بموقع مؤسسة مسمار للفنون والتنمية المستدامة وطريقة التعامل مع بيانات التواصل الأساسية.",
+        "سياسة الخصوصية الخاصة بموقع مؤسسة مسمار للثقافة والتنمية المستدامة وطريقة التعامل مع بيانات التواصل الأساسية.",
       image: "/images/footer.jpg",
     },
     en: {
       title: "Privacy Policy | MISMAR Foundation",
       description:
-        "Privacy Policy for MISMAR Foundation for Arts and Sustainable Development and how basic contact information is handled.",
+        "Privacy Policy for MISMAR Foundation for Culture and Sustainable Development and how basic contact information is handled.",
       image: "/images/footer.jpg",
     },
     ku: {
@@ -176,7 +176,7 @@ const seoContent: Record<
     ar: {
       title: "شروط استخدام الموقع | مؤسسة مسمار",
       description:
-        "شروط استخدام موقع مؤسسة مسمار للفنون والتنمية المستدامة وحقوق المحتوى والنصوص والتصاميم والصور.",
+        "شروط استخدام موقع مؤسسة مسمار للثقافة والتنمية المستدامة وحقوق المحتوى والنصوص والتصاميم والصور.",
       image: "/images/footer.jpg",
     },
     en: {

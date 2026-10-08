@@ -11,7 +11,7 @@ const content = {
     dir: "rtl",
     back: "العودة للرئيسية",
     title: "تواصل وانضم إلى مسمار",
-    contactImageAlt: "التواصل مع مؤسسة مسمار للفنون والتنمية المستدامة في بغداد",
+    contactImageAlt: "التواصل مع مؤسسة مسمار للثقافة والتنمية المستدامة في بغداد",
     subtitle:
       "إذا كنت ترغب بالتعاون، المشاركة، دعم مشاريع الترميم، إقامة ورش أو فعاليات فنية، أو لديك بيت تراثي يحتاج إلى إحياء، يمكنك التواصل معنا عبر النموذج التالي.",
     formTitle: "أرسل طلبك إلى مسمار",
@@ -28,7 +28,7 @@ const content = {
     dir: "ltr",
     back: "Back Home",
     title: "Contact & Join Mismar",
-    contactImageAlt: "Contact MISMAR Foundation for Arts and Sustainable Development in Baghdad",
+    contactImageAlt: "Contact MISMAR Foundation for Culture and Sustainable Development in Baghdad",
     subtitle:
       "If you would like to collaborate, support restoration projects, organize workshops or exhibitions, or restore a heritage house, contact us through the form below.",
     formTitle: "Send Your Request",
@@ -45,7 +45,7 @@ const content = {
     dir: "rtl",
     back: "گەڕانەوە بۆ سەرەکی",
     title: "پەیوەندی و بەشداری لە مسمار",
-    contactImageAlt: "پەیوەندی بە دامەزراوەی مسمار بۆ هونەر و گەشەپێدانی بەردەوام لە بەغدا",
+    contactImageAlt: "پەیوەندی بە دامەزراوەی مسمار بۆ کولتوور و گەشەپێدانی بەردەوام لە بەغدا",
     subtitle:
       "ئەگەر دەتەوێت هاوکاری، پشتگیری، بەشداری، یان چالاکییەکی کولتووری پێشنیار بکەیت، لە ڕێگەی ئەم فۆرمەوە پەیوەندیمان پێوە بکە.",
     formTitle: "داواکارییەکەت بنێرە",

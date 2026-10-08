@@ -16,7 +16,7 @@ const content = {
     eyebrow: "مسمار",
     title: "سياسة الخصوصية",
     intro:
-      "توضح هذه السياسة كيف تتعامل مؤسسة مسمار للفنون والتنمية المستدامة مع البيانات التي قد يقدمها زوار الموقع عند التواصل أو استخدام الصفحات التعريفية.",
+      "توضح هذه السياسة كيف تتعامل مؤسسة مسمار للثقافة والتنمية المستدامة مع البيانات التي قد يقدمها زوار الموقع عند التواصل أو استخدام الصفحات التعريفية.",
     sections: [
       {
         title: "من نحن",
@@ -70,7 +70,7 @@ const content = {
     eyebrow: "Mismar",
     title: "Privacy Policy",
     intro:
-      "This policy explains how MISMAR Foundation for Arts and Sustainable Development handles information that visitors may provide when contacting the foundation or using this informational website.",
+      "This policy explains how MISMAR Foundation for Culture and Sustainable Development handles information that visitors may provide when contacting the foundation or using this informational website.",
     sections: [
       {
         title: "Who We Are",
@@ -124,7 +124,7 @@ const content = {
     eyebrow: "مسمار",
     title: "سیاسەتی تایبەتمەندی",
     intro:
-      "ئەم سیاسەتە ڕوون دەکاتەوە دامەزراوەی مسمار بۆ هونەر و گەشەپێدانی بەردەوام چۆن مامەڵە لەگەڵ ئەو زانیارییانە دەکات کە سەردانکەران لە کاتی پەیوەندی یان بەکارهێنانی ماڵپەڕەکەدا پێشکەشی دەکەن.",
+      "ئەم سیاسەتە ڕوون دەکاتەوە دامەزراوەی مسمار بۆ کولتوور و گەشەپێدانی بەردەوام چۆن مامەڵە لەگەڵ ئەو زانیارییانە دەکات کە سەردانکەران لە کاتی پەیوەندی یان بەکارهێنانی ماڵپەڕەکەدا پێشکەشی دەکەن.",
     sections: [
       {
         title: "ئێمە کێین",

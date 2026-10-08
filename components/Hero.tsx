@@ -40,9 +40,9 @@ const content = {
     info: [
       {
         label: "الموقع",
-        value: "الفوتر",
+        value: "بيت التحفيات",
         icon: MapPin,
-        href: "#contact",
+        href: "https://maps.app.goo.gl/41uNFHCKJ4rpmb7K6",
       },
       {
         label: "الفعاليات",
@@ -88,9 +88,9 @@ const content = {
     info: [
       {
         label: "Location",
-        value: "Footer",
+        value: "Bayt Al-Tuhafiyat",
         icon: MapPin,
-        href: "#contact",
+        href: "https://maps.app.goo.gl/41uNFHCKJ4rpmb7K6",
       },
       {
         label: "Activities",
@@ -136,9 +136,9 @@ const content = {
     info: [
       {
         label: "شوێن",
-        value: "فوتەر",
+        value: "ماڵی التحفیات",
         icon: MapPin,
-        href: "#contact",
+        href: "https://maps.app.goo.gl/41uNFHCKJ4rpmb7K6",
       },
       {
         label: "چالاکییەکان",
@@ -181,6 +181,7 @@ export default function Hero({ locale = "ar" }: Props) {
   const ArrowIcon = isRtl ? ArrowLeft : ArrowRight;
 
   const makeHref = (href: string) => {
+    if (href.startsWith("http")) return href;
     if (href.startsWith("#")) return `/${locale}${href}`;
     return `/${locale}${href}`;
   };
@@ -229,11 +230,14 @@ export default function Hero({ locale = "ar" }: Props) {
 
         {t.info.map((item) => {
           const Icon = item.icon;
+          const isExternal = item.href.startsWith("http");
 
           return (
             <Link
               key={item.label}
               href={makeHref(item.href)}
+              target={isExternal ? "_blank" : undefined}
+              rel={isExternal ? "noopener noreferrer" : undefined}
               className="group flex h-20 items-center justify-center gap-4 border-r border-[#2b1207]/10 px-6 transition hover:bg-[#eee3d7]"
             >
               <Icon

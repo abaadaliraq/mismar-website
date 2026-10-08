@@ -159,7 +159,7 @@ export default async function ActivitiesPage({ params }: Props) {
 
         <div className="mt-12 md:mt-0">
           <img
-            src="/images/hero.jpg"
+            src="/images/workshop-cover.jpg"
             alt={t.heroImageAlt}
             className="h-[420px] w-full object-cover"
           />
