@@ -1,10 +1,21 @@
 import type { Metadata } from "next";
 import Navbar from "@/components/Navbar";
+import ContactMailForm from "@/components/ContactMailForm";
 import Link from "next/link";
-import { ArrowLeft, ArrowRight } from "lucide-react";
+import { ArrowLeft, ArrowRight, Mail, Phone, Play } from "lucide-react";
 import { buildMetadata } from "@/lib/seo";
 
 type Locale = "ar" | "en" | "ku";
+
+const contact = {
+  email: "info@mismar.ngo",
+  phone: "+9647779922838",
+  instagram: "https://www.instagram.com/mismar_ngo/?__pwa=1",
+  facebook:
+    "https://web.facebook.com/profile.php?id=61595166274711&rdid=cPEygDkURRKb9QGz&share_url=https%3A%2F%2Fweb.facebook.com%2Fshare%2F19DzPEj9Z1%2F%3F_rdc%3D1%26_rdr#",
+  youtube: "https://www.youtube.com/@mismarngo",
+  tiktok: "https://www.tiktok.com/@mismar.ngo?lang=en",
+};
 
 const content = {
   ar: {
@@ -19,9 +30,14 @@ const content = {
     phone: "رقم الهاتف",
     notes: "اكتب ملاحظاتك أو تفاصيل الطلب",
     button: "إرسال الطلب",
+    subject: "طلب تواصل مع مؤسسة مسمار",
     infoTitle: "لماذا تتواصل مع مسمار؟",
     infoText:
       "تعمل مؤسسة مسمار على إحياء البيوت التراثية وتحويلها إلى فضاءات ثقافية وسياحية وفنية حيّة، كما تستضيف المعارض والورش الفنية والبرامج الثقافية والتعليمية.",
+    contactTitle: "معلومات التواصل",
+    email: "البريد الإلكتروني",
+    phoneLabel: "الهاتف",
+    socialTitle: "تابع مسمار",
   },
 
   en: {
@@ -36,9 +52,14 @@ const content = {
     phone: "Phone Number",
     notes: "Write your message or request details",
     button: "Send Request",
+    subject: "Contact request for MISMAR Foundation",
     infoTitle: "Why Mismar?",
     infoText:
       "MISMAR Foundation works to revive heritage houses and transform them into living cultural, artistic, and touristic destinations while hosting workshops, exhibitions, and educational programs.",
+    contactTitle: "Contact Information",
+    email: "Email",
+    phoneLabel: "Phone",
+    socialTitle: "Follow Mismar",
   },
 
   ku: {
@@ -53,9 +74,14 @@ const content = {
     phone: "ژمارەی مۆبایل",
     notes: "وردەکاری داواکارییەکەت بنووسە",
     button: "ناردنی داواکاری",
+    subject: "داواکاری پەیوەندی بۆ مسمار",
     infoTitle: "بۆچی مسمار؟",
     infoText:
       "مسمار کار دەکات بۆ نۆژەنکردنەوەی شوێنە کەلەپوورییەکان و گۆڕینیان بۆ شوێنی کولتووری و هونەری.",
+    contactTitle: "زانیاری پەیوەندی",
+    email: "ئیمەیڵ",
+    phoneLabel: "مۆبایل",
+    socialTitle: "شوێنکەوتنی مسمار",
   },
 };
 
@@ -135,6 +161,72 @@ export default async function ContactPage({
             <p className="mt-7 text-base font-light leading-9 text-[#2a1005]/72">
               {t.infoText}
             </p>
+
+            <div className="mt-9 border-t border-[#2a1005]/12 pt-7">
+              <h3 className="text-xl font-light md:text-2xl">
+                {t.contactTitle}
+              </h3>
+
+              <div className="mt-5 grid gap-3 text-sm font-light text-[#2a1005]/70">
+                <a
+                  href={`mailto:${contact.email}`}
+                  className="inline-flex w-fit items-center gap-3 transition hover:text-[#2f9c95]"
+                  dir="ltr"
+                >
+                  <Mail size={16} />
+                  {contact.email}
+                </a>
+
+                <a
+                  href={`tel:${contact.phone}`}
+                  className="inline-flex w-fit items-center gap-3 transition hover:text-[#2f9c95]"
+                  dir="ltr"
+                >
+                  <Phone size={16} />
+                  {contact.phone}
+                </a>
+              </div>
+
+              <p className="mt-7 text-xs font-light uppercase tracking-[0.28em] text-[#2f9c95]">
+                {t.socialTitle}
+              </p>
+
+              <div className="mt-4 flex flex-wrap gap-3">
+                <a
+                  href={contact.instagram}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="border border-[#2a1005]/18 px-4 py-2 text-sm font-light transition hover:border-[#2f9c95] hover:text-[#2f9c95]"
+                >
+                  Instagram
+                </a>
+                <a
+                  href={contact.facebook}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="border border-[#2a1005]/18 px-4 py-2 text-sm font-light transition hover:border-[#2f9c95] hover:text-[#2f9c95]"
+                >
+                  Facebook
+                </a>
+                <a
+                  href={contact.youtube}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 border border-[#2a1005]/18 px-4 py-2 text-sm font-light transition hover:border-[#2f9c95] hover:text-[#2f9c95]"
+                >
+                  <Play size={14} />
+                  YouTube
+                </a>
+                <a
+                  href={contact.tiktok}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="border border-[#2a1005]/18 px-4 py-2 text-sm font-light transition hover:border-[#2f9c95] hover:text-[#2f9c95]"
+                >
+                  TikTok
+                </a>
+              </div>
+            </div>
           </div>
 
           <div className="border border-[#2a1005]/10 bg-[#fbf8f3] p-6 md:p-10">
@@ -142,36 +234,17 @@ export default async function ContactPage({
               {t.formTitle}
             </h3>
 
-            <form className="space-y-5">
-              <input
-                type="text"
-                name="name"
-                placeholder={t.name}
-                className="h-14 w-full border border-[#2a1005]/15 bg-transparent px-5 text-sm outline-none transition placeholder:text-[#2a1005]/40 focus:border-[#2f9c95]"
-              />
-
-              <input
-                type="tel"
-                name="phone"
-                placeholder={t.phone}
-                className="h-14 w-full border border-[#2a1005]/15 bg-transparent px-5 text-sm outline-none transition placeholder:text-[#2a1005]/40 focus:border-[#2f9c95]"
-              />
-
-              <textarea
-                name="notes"
-                placeholder={t.notes}
-                rows={6}
-                className="w-full resize-none border border-[#2a1005]/15 bg-transparent px-5 py-4 text-sm outline-none transition placeholder:text-[#2a1005]/40 focus:border-[#2f9c95]"
-              />
-
-              <button
-                type="submit"
-                className="flex h-14 items-center justify-center gap-3 bg-[#2a1005] px-10 text-sm font-light text-white transition hover:bg-[#2f9c95]"
-              >
-                {t.button}
-                <ArrowIcon size={16} />
-              </button>
-            </form>
+            <ContactMailForm
+              dir={t.dir as "rtl" | "ltr"}
+              email={contact.email}
+              labels={{
+                name: t.name,
+                phone: t.phone,
+                notes: t.notes,
+                button: t.button,
+                subject: t.subject,
+              }}
+            />
           </div>
         </div>
       </section>

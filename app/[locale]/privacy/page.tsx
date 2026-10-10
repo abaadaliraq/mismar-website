@@ -60,7 +60,7 @@ const content = {
       },
       {
         title: "التواصل",
-        text: "للاستفسار حول الخصوصية أو طلب تعديل البيانات، يمكن التواصل مع مؤسسة مسمار عبر البريد الإلكتروني: info@mismararts.com",
+        text: "للاستفسار حول الخصوصية أو طلب تعديل البيانات، يمكن التواصل مع مؤسسة مسمار عبر البريد الإلكتروني: info@mismar.ngo",
       },
     ],
   },
@@ -114,7 +114,7 @@ const content = {
       },
       {
         title: "Contact",
-        text: "For privacy questions or data correction requests, contact MISMAR Foundation at: info@mismararts.com",
+        text: "For privacy questions or data correction requests, contact MISMAR Foundation at: info@mismar.ngo",
       },
     ],
   },
@@ -168,7 +168,7 @@ const content = {
       },
       {
         title: "پەیوەندی",
-        text: "بۆ پرسیار لەبارەی تایبەتمەندی یان داوای ڕاستکردنەوەی زانیاری، پەیوەندی بە مسمارەوە بکە لە: info@mismararts.com",
+        text: "بۆ پرسیار لەبارەی تایبەتمەندی یان داوای ڕاستکردنەوەی زانیاری، پەیوەندی بە مسمارەوە بکە لە: info@mismar.ngo",
       },
     ],
   },

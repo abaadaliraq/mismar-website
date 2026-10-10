@@ -13,7 +13,13 @@ const organizationJsonLd = {
     "دامەزراوەی مسمار بۆ کولتوور و گەشەپێدانی بەردەوام",
   ],
   url: BASE_URL,
-  email: "info@mismararts.com",
+  email: "info@mismar.ngo",
+  sameAs: [
+    "https://www.instagram.com/mismar_ngo/?__pwa=1",
+    "https://web.facebook.com/profile.php?id=61595166274711",
+    "https://www.youtube.com/@mismarngo",
+    "https://www.tiktok.com/@mismar.ngo?lang=en",
+  ],
   address: {
     "@type": "PostalAddress",
     addressLocality: "Baghdad",

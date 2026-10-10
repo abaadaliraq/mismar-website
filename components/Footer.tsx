@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Mail, Play } from "lucide-react";
+import { Mail, Phone, Play } from "lucide-react";
 
 export type Locale = "ar" | "en" | "ku";
 
@@ -33,7 +33,8 @@ const content = {
         links: [
           { label: "سياسة الخصوصية", href: "privacy" },
           { label: "شروط الاستخدام", href: "terms" },
-          { label: "البريد الإلكتروني", href: "mailto:info@mismararts.com" },
+          { label: "البريد الإلكتروني", href: "mailto:info@mismar.ngo" },
+          { label: "الهاتف", href: "tel:+9647779922838" },
         ],
       },
     ],
@@ -63,7 +64,8 @@ const content = {
         links: [
           { label: "Privacy Policy", href: "privacy" },
           { label: "Terms of Use", href: "terms" },
-          { label: "Email", href: "mailto:info@mismararts.com" },
+          { label: "Email", href: "mailto:info@mismar.ngo" },
+          { label: "Phone", href: "tel:+9647779922838" },
         ],
       },
     ],
@@ -93,7 +95,8 @@ const content = {
         links: [
           { label: "تایبەتمەندی", href: "privacy" },
           { label: "مەرجەکانی بەکارهێنان", href: "terms" },
-          { label: "ئیمەیڵ", href: "mailto:info@mismararts.com" },
+          { label: "ئیمەیڵ", href: "mailto:info@mismar.ngo" },
+          { label: "مۆبایل", href: "tel:+9647779922838" },
         ],
       },
     ],
@@ -103,11 +106,21 @@ const content = {
 const socialLinkClass =
   "flex h-10 w-10 items-center justify-center rounded-full border border-white/25 bg-white/5 text-white/82 backdrop-blur-sm transition duration-300 hover:border-[#2f9c95] hover:bg-[#2f9c95] hover:text-white";
 
+const contact = {
+  email: "info@mismar.ngo",
+  phone: "+9647779922838",
+  instagram: "https://www.instagram.com/mismar_ngo/?__pwa=1",
+  facebook:
+    "https://web.facebook.com/profile.php?id=61595166274711&rdid=cPEygDkURRKb9QGz&share_url=https%3A%2F%2Fweb.facebook.com%2Fshare%2F19DzPEj9Z1%2F%3F_rdc%3D1%26_rdr#",
+  youtube: "https://www.youtube.com/@mismarngo",
+  tiktok: "https://www.tiktok.com/@mismar.ngo?lang=en",
+};
+
 export default function Footer({ locale = "ar" }: Props) {
   const t = content[locale] ?? content.ar;
 
   const makeHref = (href: string) => {
-    if (href.startsWith("mailto:")) return href;
+    if (href.startsWith("mailto:") || href.startsWith("tel:")) return href;
     return href === "" ? `/${locale}` : `/${locale}/${href}`;
   };
 
@@ -149,7 +162,13 @@ export default function Footer({ locale = "ar" }: Props) {
           </Link>
 
           <div className="flex items-center gap-3">
-            <a href="#" className={socialLinkClass} aria-label="Instagram">
+            <a
+              href={contact.instagram}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={socialLinkClass}
+              aria-label="Instagram"
+            >
               <svg
                 viewBox="0 0 24 24"
                 className="h-[17px] w-[17px]"
@@ -159,7 +178,13 @@ export default function Footer({ locale = "ar" }: Props) {
               </svg>
             </a>
 
-            <a href="#" className={socialLinkClass} aria-label="Facebook">
+            <a
+              href={contact.facebook}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={socialLinkClass}
+              aria-label="Facebook"
+            >
               <svg
                 viewBox="0 0 24 24"
                 className="h-[17px] w-[17px]"
@@ -169,16 +194,40 @@ export default function Footer({ locale = "ar" }: Props) {
               </svg>
             </a>
 
-            <a href="#" className={socialLinkClass} aria-label="Video">
+            <a
+              href={contact.youtube}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={socialLinkClass}
+              aria-label="YouTube"
+            >
               <Play size={17} strokeWidth={1.7} />
             </a>
 
             <a
-              href="mailto:info@mismararts.com"
+              href={contact.tiktok}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={socialLinkClass}
+              aria-label="TikTok"
+            >
+              <span className="text-[10px] font-light tracking-[0.14em]">TT</span>
+            </a>
+
+            <a
+              href={`mailto:${contact.email}`}
               className={socialLinkClass}
               aria-label="Email"
             >
               <Mail size={17} strokeWidth={1.7} />
+            </a>
+
+            <a
+              href={`tel:${contact.phone}`}
+              className={socialLinkClass}
+              aria-label="Phone"
+            >
+              <Phone size={17} strokeWidth={1.7} />
             </a>
           </div>
         </div>
@@ -209,10 +258,10 @@ export default function Footer({ locale = "ar" }: Props) {
           className="mt-6 grid items-center gap-3 text-center text-xs font-light uppercase tracking-[0.22em] text-white/54 md:grid-cols-3"
         >
           <a
-            href="mailto:info@mismararts.com"
+            href={`mailto:${contact.email}`}
             className="transition hover:text-[#2f9c95] md:justify-self-start"
           >
-            info@mismararts.com
+            {contact.email}
           </a>
 
           <a
