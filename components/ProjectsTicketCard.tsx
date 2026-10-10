@@ -54,7 +54,7 @@ export default function ProjectsTicketCard({ locale = "ar" }: Props) {
         className="group grid w-full overflow-hidden border-y border-[#2a1005]/15 bg-[#fbf8f3] text-[#2a1005] transition duration-500 hover:border-[#2f9c95]/70 md:grid-cols-[1fr_1.35fr]"
       >
         <div className="order-2 grid border-t border-[#2a1005]/15 md:order-1 md:border-l md:border-t-0">
-          <div className="grid grid-cols-[90px_1fr] border-b border-[#2a1005]/15">
+          <div className="grid grid-cols-[72px_minmax(0,1fr)] border-b border-[#2a1005]/15 md:grid-cols-[90px_1fr]">
             <div className="flex flex-col items-center justify-center border-l border-[#2a1005]/15 py-5">
               <span className="text-3xl font-light leading-none">
                 {t.date}
@@ -62,12 +62,12 @@ export default function ProjectsTicketCard({ locale = "ar" }: Props) {
               <span className="mt-1 text-xs text-[#2a1005]/55">2026</span>
             </div>
 
-            <div className="flex flex-col justify-center px-6 py-5">
+            <div className="flex min-w-0 flex-col justify-center px-4 py-5 md:px-6">
               <p className="mb-2 text-xs font-light uppercase tracking-[0.28em] text-[#2f9c95]">
                 {t.label}
               </p>
 
-              <h2 className="text-2xl font-light md:text-3xl">{t.title}</h2>
+              <h2 className="text-xl font-light leading-snug md:text-3xl">{t.title}</h2>
 
               <p className="mt-3 text-sm font-light leading-7 text-[#2a1005]/65">
                 {t.subtitle}
@@ -75,8 +75,8 @@ export default function ProjectsTicketCard({ locale = "ar" }: Props) {
             </div>
           </div>
 
-          <div className="grid grid-cols-[1fr_150px]">
-            <div className="flex flex-col justify-center px-6 py-5">
+          <div className="grid grid-cols-[minmax(0,1fr)_96px] md:grid-cols-[1fr_150px]">
+            <div className="flex min-w-0 flex-col justify-center px-4 py-5 md:px-6">
               <p className="text-xs uppercase tracking-[0.18em] text-[#2a1005]/45">
                 LOCATION
               </p>
