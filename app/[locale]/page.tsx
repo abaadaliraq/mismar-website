@@ -5,6 +5,7 @@ import AboutTicketCard from "@/components/AboutTicketCard";
 import WorkshopsTicketCard from "@/components/WorkshopsTicketCard";
 import RestorationTicketCard from "@/components/RestorationTicketCard";
 import ProjectsTicketCard from "@/components/ProjectsTicketCard";
+import AdministrativeBoardSection from "@/components/AdministrativeBoardSection";
 import JoinMismarSection from "@/components/JoinMismarSection";
 import { buildMetadata } from "@/lib/seo";
 
@@ -34,6 +35,7 @@ export default async function LocalePage({
      <WorkshopsTicketCard locale={locale} />
      <RestorationTicketCard locale={locale} />
      <ProjectsTicketCard locale={locale} />
+     <AdministrativeBoardSection locale={locale} />
      <JoinMismarSection locale={locale} />
       
     </main>
