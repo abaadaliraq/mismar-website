@@ -35,8 +35,8 @@ const content: Record<
       {
         name: "هندرين طارق محمد علي طاهر الجزراوي",
         role: "نائب رئيس المؤسسة",
-        image: "/images/mismar-logo.png",
-        imageFit: "contain",
+        image: "/images/hindreen.jpg",
+        imagePosition: "55% 22%",
       },
       {
         name: "الدكتورة بتول موفق",
@@ -78,8 +78,8 @@ const content: Record<
       {
         name: "Hendren Tariq Mohammed Ali Taher Al-Jazrawi",
         role: "Vice President of the Foundation",
-        image: "/images/mismar-logo.png",
-        imageFit: "contain",
+        image: "/images/hindreen.jpg",
+        imagePosition: "55% 22%",
       },
       {
         name: "Dr. Batool Mowaffaq",
@@ -121,8 +121,8 @@ const content: Record<
       {
         name: "هەندرین تارق محمد علی تاهر الجزراوی",
         role: "جێگری سەرۆکی دامەزراوە",
-        image: "/images/mismar-logo.png",
-        imageFit: "contain",
+        image: "/images/hindreen.jpg",
+        imagePosition: "55% 22%",
       },
       {
         name: "د. بتول موفق",
