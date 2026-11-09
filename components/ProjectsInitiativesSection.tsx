@@ -1,3 +1,5 @@
+import { existsSync } from "node:fs";
+import { join } from "node:path";
 import Link from "next/link";
 import { ArrowLeft, ArrowRight, FileText } from "lucide-react";
 import { getProjectsContent, type Locale } from "@/lib/projectsContent";
@@ -45,6 +47,7 @@ export default function ProjectsInitiativesSection({ locale = "ar" }: Props) {
             const imageFirst = index % 2 === 0;
             const action = project.action;
             const downloads = project.downloads ?? (project.download ? [project.download] : []);
+            const hasCover = existsSync(join(process.cwd(), "public", project.image));
 
             return (
               <article
@@ -56,12 +59,16 @@ export default function ProjectsInitiativesSection({ locale = "ar" }: Props) {
                     imageFirst ? "md:order-1" : "md:order-2"
                   }`}
                 >
-                  <img
-                    src={project.image}
-                    alt={project.title}
-                    className="h-full w-full object-cover transition duration-700 hover:scale-105"
-                  />
-                  <div className="absolute inset-0 bg-black/10" />
+                  {hasCover && (
+                    <>
+                      <img
+                        src={project.image}
+                        alt={project.title}
+                        className="h-full w-full object-cover transition duration-700 hover:scale-105"
+                      />
+                      <div className="pointer-events-none absolute inset-0 bg-black/10" />
+                    </>
+                  )}
                 </div>
 
                 <div
@@ -78,6 +85,12 @@ export default function ProjectsInitiativesSection({ locale = "ar" }: Props) {
                   <h3 className="mt-5 text-[32px] font-light leading-[1.14] md:text-[52px]">
                     {project.title}
                   </h3>
+
+                  {project.location && (
+                    <p className="mt-3 text-sm font-light text-[#2a1005]/62">
+                      {project.location}
+                    </p>
+                  )}
 
                   <p className="mt-5 max-w-[620px] text-sm font-light leading-8 text-[#2a1005]/68 md:text-base">
                     {project.description}

@@ -14,6 +14,7 @@ export type ProjectContentItem = {
   slug: string;
   image: string;
   category: string;
+  location?: string;
   title: string;
   description: string;
   summary?: string;
@@ -173,6 +174,36 @@ export const projectsSectionContent: Record<
           },
         ],
       },
+      {
+        slug: "abu-nawass-heritage-project",
+        image: "/images/projects/abu-nawass-heritage.jpg",
+        category: "مشروع مقترح",
+        location: "بغداد – العراق",
+        title: "مشروع إحياء الشارع التراثي في أبو نؤاس",
+        description:
+          "تتبنى مؤسسة مسمار مشروع إعادة إحياء شارع تراثي يربط بين أبو نؤاس والسعدون في بغداد، من خلال تأهيل 16 بيتاً تراثياً والحفاظ على هويتها المعمارية، وإعادة توظيفها كمرافق ثقافية وسياحية تسهم في تنشيط المنطقة اقتصادياً وسياحياً.",
+        details:
+          "تتبنى مؤسسة مسمار مشروع إعادة إحياء شارع تراثي يربط بين أبو نؤاس والسعدون في بغداد، من خلال تأهيل 16 بيتاً تراثياً والحفاظ على هويتها المعمارية، وإعادة توظيفها كمرافق ثقافية وسياحية تسهم في تنشيط المنطقة اقتصادياً وسياحياً.",
+        action: {
+          label: "عرض ملف المشروع",
+          href: "/pdfs/abu-nawass-heritage-project.pdf",
+        },
+      },
+      {
+        slug: "ur-sustainable-heritage-city",
+        image: "/images/projects/ur-sustainable-heritage-city.jpg",
+        category: "مشروع مقترح",
+        location: "ذي قار – العراق",
+        title: "مشروع مدينة أور المستدامة",
+        description:
+          "مشروع تقترحه مؤسسة مسمار لتطوير مدينة نموذجية مستدامة بالقرب من مدينة أور الأثرية في محافظة ذي قار، تجمع بين العمارة المستوحاة من حضارة وادي الرافدين والتقنيات الذكية والطاقة المتجددة، وتضم مرافق سياحية وثقافية وإقامة مستدامة مع الحفاظ على البيئة والمشهد الأثري.",
+        details:
+          "مشروع تقترحه مؤسسة مسمار لتطوير مدينة نموذجية مستدامة بالقرب من مدينة أور الأثرية في محافظة ذي قار، تجمع بين العمارة المستوحاة من حضارة وادي الرافدين والتقنيات الذكية والطاقة المتجددة، وتضم مرافق سياحية وثقافية وإقامة مستدامة مع الحفاظ على البيئة والمشهد الأثري.",
+        action: {
+          label: "عرض ملف المشروع",
+          href: "/pdfs/ur-sustainable-heritage-city.pdf",
+        },
+      },
     ],
   },
   en: {
@@ -292,6 +323,36 @@ export const projectsSectionContent: Record<
           },
         ],
       },
+      {
+        slug: "abu-nawass-heritage-project",
+        image: "/images/projects/abu-nawass-heritage.jpg",
+        category: "Proposed Project",
+        location: "Baghdad – Iraq",
+        title: "Abu Nawas Heritage Street Revitalization Project",
+        description:
+          "MISMAR Foundation proposes revitalizing a heritage street connecting Abu Nawas and Al-Saadoun in Baghdad by restoring 16 historic houses, preserving their architectural identity, and repurposing them as cultural and tourism facilities that support local development.",
+        details:
+          "MISMAR Foundation proposes revitalizing a heritage street connecting Abu Nawas and Al-Saadoun in Baghdad by restoring 16 historic houses, preserving their architectural identity, and repurposing them as cultural and tourism facilities that support local development.",
+        action: {
+          label: "View Project PDF",
+          href: "/pdfs/abu-nawass-heritage-project.pdf",
+        },
+      },
+      {
+        slug: "ur-sustainable-heritage-city",
+        image: "/images/projects/ur-sustainable-heritage-city.jpg",
+        category: "Proposed Project",
+        location: "Dhi Qar – Iraq",
+        title: "UR Sustainable Heritage City",
+        description:
+          "MISMAR Foundation proposes developing a sustainable urban and tourism destination near the ancient city of Ur in Dhi Qar, integrating Mesopotamian architectural heritage, renewable energy, smart technologies, and cultural facilities while protecting the surrounding environment and archaeological landscape.",
+        details:
+          "MISMAR Foundation proposes developing a sustainable urban and tourism destination near the ancient city of Ur in Dhi Qar, integrating Mesopotamian architectural heritage, renewable energy, smart technologies, and cultural facilities while protecting the surrounding environment and archaeological landscape.",
+        action: {
+          label: "View Project PDF",
+          href: "/pdfs/ur-sustainable-heritage-city.pdf",
+        },
+      },
     ],
   },
   ku: {
@@ -406,6 +467,36 @@ export const projectsSectionContent: Record<
             href: projectLinks.ghadeerAlTaee,
           },
         ],
+      },
+      {
+        slug: "abu-nawass-heritage-project",
+        image: "/images/projects/abu-nawass-heritage.jpg",
+        category: "پرۆژەی پێشنیارکراو",
+        location: "بەغدا – عێراق",
+        title: "پرۆژەی زیندووکردنەوەی شەقامی میراتی ئەبو نەواس",
+        description:
+          "دامەزراوەی مەسمار پێشنیاری زیندووکردنەوەی شەقامێکی میراتی دەکات کە ئەبو نەواس بە سەعدوون لە بەغدا دەبەستێتەوە. پرۆژەکە نۆژەنکردنەوەی ١٦ ماڵی میراتی، پاراستنی ناسنامەی تەلارسازییان و بەکارهێنانەوەیان وەک ناوەندی کولتووری و گەشتیاری دەگرێتەوە، بۆ پشتگیری لە گەشەی ئابووری و گەشتیاریی ناوچەکە.",
+        details:
+          "دامەزراوەی مەسمار پێشنیاری زیندووکردنەوەی شەقامێکی میراتی دەکات کە ئەبو نەواس بە سەعدوون لە بەغدا دەبەستێتەوە. پرۆژەکە نۆژەنکردنەوەی ١٦ ماڵی میراتی، پاراستنی ناسنامەی تەلارسازییان و بەکارهێنانەوەیان وەک ناوەندی کولتووری و گەشتیاری دەگرێتەوە، بۆ پشتگیری لە گەشەی ئابووری و گەشتیاریی ناوچەکە.",
+        action: {
+          label: "بینینی فایلی پرۆژە (PDF)",
+          href: "/pdfs/abu-nawass-heritage-project.pdf",
+        },
+      },
+      {
+        slug: "ur-sustainable-heritage-city",
+        image: "/images/projects/ur-sustainable-heritage-city.jpg",
+        category: "پرۆژەی پێشنیارکراو",
+        location: "زیقار – عێراق",
+        title: "پرۆژەی شاری میراتی بەردەوامی ئور",
+        description:
+          "دامەزراوەی مەسمار پێشنیاری پەرەپێدانی شارێکی نموونەیی و بەردەوام لە نزیک شاری دێرینی ئور لە پارێزگای زیقار دەکات. پرۆژەکە تەلارسازیی ئیلهام‌وەرگرتوو لە شارستانییەتی میزۆپۆتامیا، تەکنەلۆژیای زیرەک و وزەی نوێبووەوە لەگەڵ دامەزراوە گەشتیاری و کولتوورییەکان و شوێنی مانەوەی بەردەوام کۆدەکاتەوە و ژینگە و دیمەنی شوێنەوارەکان دەپارێزێت.",
+        details:
+          "دامەزراوەی مەسمار پێشنیاری پەرەپێدانی شارێکی نموونەیی و بەردەوام لە نزیک شاری دێرینی ئور لە پارێزگای زیقار دەکات. پرۆژەکە تەلارسازیی ئیلهام‌وەرگرتوو لە شارستانییەتی میزۆپۆتامیا، تەکنەلۆژیای زیرەک و وزەی نوێبووەوە لەگەڵ دامەزراوە گەشتیاری و کولتوورییەکان و شوێنی مانەوەی بەردەوام کۆدەکاتەوە و ژینگە و دیمەنی شوێنەوارەکان دەپارێزێت.",
+        action: {
+          label: "بینینی فایلی پرۆژە (PDF)",
+          href: "/pdfs/ur-sustainable-heritage-city.pdf",
+        },
       },
     ],
   },
